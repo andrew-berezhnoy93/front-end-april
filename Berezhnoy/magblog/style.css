@@ -1,0 +1,54 @@
+.holder{
+position: relative;
+width: 300px;
+height: 300px;
+margin: 0 auto;
+background: #CFD8Dc;
+}
+
+.triangle{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -25px -25px;
+	display: block;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 12px 14px 13px 0;
+	border-color: transparent #76FF03 transparent transparent;
+}
+
+.triangle{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -25px -25px;
+	display: block;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 12px 14px 13px 0;
+	border-color: transparent #76FF03 transparent transparent;
+}
+
+.inner-triangle{
+	position: absolute;
+	margin: -25px -25px;
+	display: block;
+	margin: -15px -20px;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 15px 15px 15px 0;
+	border-color: transparent #76FF03 #283593 transparent;
+}
+
+.inner-triangle:after{
+	content: '';
+	display: block;
+	border: inherit;
+	position: absolute;
+	top: 40%;
+	left: 40%;
+}

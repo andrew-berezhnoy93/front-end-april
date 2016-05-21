@@ -1,0 +1,54 @@
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+.quote:before {
+	content: '"';
+}
+
+.quote:after {
+	content: '"';
+}
+
+.clearfix:after{
+	content: "Clearfix huck";
+	display: block;
+	clear: both;
+}
+
+
+.align-right {
+	float: right;
+	padding-left: 500px;
+}
+
+.container {
+	width: 1000px;
+	padding: 20px;
+	margin: 0 auto 0 auto;
+	background-color: #eee;
+	min-height: 1000px;
+	overflow: hidden;
+}
+
+
+#content {
+	height: 200px;
+	width: 200px;
+	background: #550000;
+	float: right;
+	margin-left: 20px;
+}
+
+#header {
+	background-color: orange;
+}
+
+#sidebar {
+	height: 300px;
+	width: 150px;
+	background-color: green;
+	float: left;
+	margin-right: 20px;
+}
