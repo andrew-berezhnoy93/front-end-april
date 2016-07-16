@@ -1,0 +1,77 @@
+/* Reset styles */
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both; }
+
+*:before,
+*:after {
+  content: '';
+  display: table; }
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box; }
+
+/* Styles for responcive*/
+/* Container*/
+.container {
+  /*@extend .clearfix;*/
+  max-width: 1000px;
+  padding: 0 15px;
+  margin: 0 auto;
+  box-sizing: border-box; }
+
+/* Layouts*/
+/* Header */
+.header {
+  height: 100px;
+  width: 1000px;
+  background-color: #efe;
+  margin: 0 0 20px; }
+  @media screen and (max-width: 1000px) {
+    .header {
+      height: 50px; } }
+
+.main {
+  overflow: hidden;
+  height: 500px;
+  background-color: #ebe; }
+  @media screen and (max-width: tabletDeviceWidth) {
+    .main {
+      margin-bottom: 20px; } }
+
+.sidebar {
+  float: right;
+  width: 250px;
+  background-color: #eee;
+  height: 500px;
+  margin-left: 50px; }
+  .main + .sidebar {
+    display: none; }
+  @media screen and (max-width: 1000px) {
+    .sidebar {
+      display: none;
+      /*float: none;
+      width: auto;
+      margin: 0 0 $sidebarMargin;*/ }
+      .main + .sidebar {
+        display: block;
+        float: none;
+        width: auto;
+        margin-left: 0;
+        height: 50px; } }
+
+.footer {
+  background-color: #efd;
+  height: 100px; }
+
+.element {
+  display: inline-block;
+  padding: 20px;
+  font-size: 26px;
+  line-height: 30px;
+  background-color: #fee; }
+
+/*# sourceMappingURL=styles.css.map */

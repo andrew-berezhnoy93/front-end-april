@@ -1,0 +1,46 @@
+/* RESET */
+* {
+  padding: 0;
+  margin: 0; }
+
+.clearfix:after, .container:after {
+  content: '';
+  display: block;
+  clear: both; }
+
+/* CONTAINER */
+/* container */
+.container {
+  direction: rtl;
+  background-color: #fff5e6;
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+  color: black; }
+
+/* LAYOUTS */
+/* HEADER */
+.header {
+  height: 50px;
+  background-color: #5c85d6; }
+
+/* main */
+.main {
+  display: inline;
+  width: 66.66667%;
+  float: left;
+  background: #008080;
+  height: 999px; }
+
+.sidebar {
+  display: inline;
+  float: right;
+  width: 20.83333%;
+  background-color: yellow;
+  height: 300px; }
+
+/* FOOTER */
+.footer {
+  background-color: #152f22; }
+
+/*# sourceMappingURL=style.css.map */

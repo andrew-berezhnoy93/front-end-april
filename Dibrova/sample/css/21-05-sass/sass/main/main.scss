@@ -1,0 +1,15 @@
+/* Container*/
+@import 'layouts/container';
+
+/* Layouts*/
+@import 'layouts/header';
+@import 'layouts/main';
+@import 'layouts/sidebar';
+@import 'layouts/footer';
+.element {
+	display: inline-block;
+	padding: 20px;
+	font-size: 26px;
+	line-height: 30px;
+	background-color: #fee;
+}

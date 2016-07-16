@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="main.js"></script>
+   
+</head>
+
+<body>
+
+	<button id="button-to-hide" value="">Нажми меня и текст удалится</button>
+	<div id="text-remove">Текст который должен удалиться</div>
+	<hr>
+	<hr>
+	<button onclick="this.style.display = 'none'">Нажми меня и я должна удалится</button>
+
+
+	
+	<script>
+		document.getElementById('button-to-hide').onclick = function() {
+			document.getElementById('text-remove').style.display = 'none';
+		}
+		
+		// document.getElementById('button-hide').onclick = function() {
+		// 	document.getElementById('text-remove').style.display = 'none';
+		// }
+		
+
+
+
+	</script>
+
+</body>
+
+</html>

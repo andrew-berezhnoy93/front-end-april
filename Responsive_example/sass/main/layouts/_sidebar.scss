@@ -1,0 +1,27 @@
+/* Sidebar */
+
+.sidebar {
+	float: right;
+	width: $sidebarWidth;
+	margin-left: $sidebarMargin;
+	background-color: $generalBgColor;
+	height: 500px;
+	margin-bottom: 20px;
+	padding: $sidebarPadding;
+
+	.main + & {
+		display: none;
+	}
+
+	@media screen and (max-width: $tabletDeviceWidth) {
+		display: none;
+
+		.main + & {
+			display: block;
+			float: none;
+			width: auto;
+			margin-left: 0;
+			height: 50px;
+		}
+	}
+}

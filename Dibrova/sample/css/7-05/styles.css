@@ -1,0 +1,33 @@
+html, body {
+	padding: 0;
+	margin: 0;
+}
+
+div {
+	background: green url(sprite.png) no-repeat 50% 50%;
+	float: left;
+	height: 200px;
+	width: 200px;
+	padding: 40px;
+	border: 10px dashed rgba(240, 240, 240, 0.9);
+	border-top-color: green;
+	border-left-color: blue;
+	border-right-color: black;
+	border-bottom-color: lime;
+	transition: all 1s;
+	background-clip: border-box;
+	background-origin: border-box;
+	background-size: cover;
+	border-radius: 10%;
+}
+
+div + div {
+	margin-left: 20px;
+}
+
+div:hover {
+	height: 300px;
+	width: 300px;
+	background-color: red;
+	background-clip: padding-box;
+}

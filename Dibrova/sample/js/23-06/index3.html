@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- <button class="remove-button">[x]</button> -->
+    <div id="massage-container">
+        <div class="pane">
+            <h3>Лошадь</h3>
+            <p>Домашняя лошадь</p>
+            <button class="remove-button">Лошадь</button>
+        </div>
+        <div class="pane">
+            <h3>Осел</h3>
+            <p>Домашний осел и ишак.</p>
+            <button class="remove-button">Осел</button>
+        </div>
+        <div class="pane">
+            <h3>Корова, а таже пара слов о диком быке, о волах и о телках.</h3>
+            <p>Корова</p>
+            <button class="remove-button">Корова</button>
+        </div>
+    </div>
+    <script>
+    var container = document.getElementById('massage-container');
+
+    container.onclick = function(event) {
+        if (!event.target.classList.contains('remove-button')) return;
+
+        event.target.parentNode.hidden = !event.target.parentNode.hidden;
+    }
+    </script>
+</body>
+
+</html>

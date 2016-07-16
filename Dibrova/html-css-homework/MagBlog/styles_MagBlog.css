@@ -1,0 +1,290 @@
+body {
+	margin: 0;
+	background: #eeeeee;
+	color: #000;
+	font: 11px/1.2 Arial, Helvetica, sans-serif;
+	width: 1500px;
+	height: 2425px;
+}
+a {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+h2, h3 {
+	margin: 0;
+}
+header, footer, article, section, nav, #wrapper, #main {
+	/*display: block;*/
+	width: 1050px;
+	box-sizing: border-box;
+}
+#wrapper {
+	margin: 0 auto;
+	height: 2325px;
+	background: #fff;
+}
+#header {
+	background: #fff;
+	padding: 25px 25px 10px 25px;
+	height: 490px;
+}
+#main {
+	height: 1825px;
+	margin: 0;
+	padding: 0px 25px 25px 25px;
+}
+.content {
+	width: 660px;
+	height: 1825px;
+	padding: 0;
+	float: left;
+}
+.sidebar {
+	width: 340px;
+	height: 1825px;
+	margin: 0;
+	padding: 0;
+	float: right;
+}
+.clearfix {
+  clear: both;
+}
+footer {
+	background: #eeeeee;
+	width: 1050px;
+	height: 75px;
+	margin: 0;
+	padding: 30px 425px 30px 425px;
+	font-size: 15px;
+	color: black;
+}
+#main:after, #footer:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+.logo {
+	float: left;
+}
+.logo a {
+	width: 187px;
+	height: 64px;
+}
+.search {
+	float: left;
+}
+.search-holder {
+	margin: 20px 0px 0px 120px;
+	float: left;
+}
+.search-size {
+	width: 320px;
+	height: 35px;
+}
+.search-button {
+	box-sizing: border-box;
+	/*display: inline-block;*/
+	width: 120px;
+	height: 35px;
+	background: #00aedb;
+	color: #fff;
+	font-size: 20px;
+	font-weight: bold;
+	text-decoration: none;
+	text-transform: capitalize;
+	padding: 6px 18px;
+	margin: 11px 0px 0px 0px;
+	float: left;
+}
+.search-button:hover {
+	text-decoration: none;
+}
+.social-holder {
+	/*position: absolute;*/
+	float: right;
+	margin: 30px 80px 0px 0px;
+}
+#social {
+	position: relative;
+	margin: 0;
+}
+#social li {
+  position: absolute;
+	list-style: none;
+	top: 0;
+}
+#social li, #social a {
+	height: 36px;
+	display: block;
+}
+#hi-fi {
+	left: 1px;
+	width: 36px;
+	background: url(../MagBlog/social.png) -1px 0;
+}
+#facebook {
+	left: 43px;
+	width: 36px;
+	background: url(../MagBlog/social.png) -43px 0;
+}
+#twitter {
+	left: 86px;
+  width: 36px;
+  background: url(../MagBlog/social.png) -86px 0;
+}
+.clearfix {
+  clear: both;
+}
+.navigation {
+	height: 36px;
+	width: 1000px;
+	background: #898989;
+	font-size: 18px;
+	text-transform: uppercase;
+}
+.navigation ul {
+	margin: 0;
+	padding: 0;
+}
+.navigation ul li {
+	display: inline-block;
+}
+.navigation ul a {
+	box-sizing: border-box;
+	height: 36px;
+	padding: 7px 8px 7px 8px;
+	display: block;
+	color: #fff;
+}
+.navigation ul li .nav-home {
+	background: #00aedb;
+}
+.navigation ul li .nav-cinema {
+	background: #8cc63f;
+}
+.navigation ul li .nav-magazine {
+	background: #5261ac;
+}
+.navigation ul li .nav-cssauthor {
+	background: #00aedb;
+}
+.navigation ul li .nav-topmenu {
+	background: #f78f1d;
+}
+.navigation ul li .nav-archives {
+	background: #ff0000;
+}
+.navigation ul li .nav-contact {
+	background: #898989;
+}
+.navigation ul .active a,
+.navigation ul a:hover {
+	text-decoration: underline;
+}
+.top-stories .tittle {
+	display: block;
+	font-size: 18px;
+	color: #00aedb;
+	text-transform: uppercase;
+	font-weight: bold;
+	padding: 5px 0 5px 0;
+}
+.top-stories .block1 {
+	float: left;
+}
+.top-stories .block2 {
+	float: left;
+	margin: 0 10px 0 10px;
+}
+.top-stories .block3 {
+	float: right;
+}
+.top-stories a {
+	box-sizing: border-box;
+	display: block;
+	height: 40px;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 20px;
+	padding: 9px 8px 8px 8px;
+}
+.top-stories .link1 {
+	background: #00aedb;
+}
+.top-stories .link2 {
+	background: #f78f1d;
+}
+.top-stories .link3 {
+	background: #ec098d;
+}
+.top-stories p {
+	box-sizing: border-box;
+	display: block;
+	width: 300px;
+	font-size: 15px;
+	font-weight: bold;
+	color: #555;
+}
+.section1 .p1 {
+	box-sizing: border-box;
+	display: block;
+	width: 540px;
+	font-size: 28px;
+	font-weight: bold;
+	color: #000;
+	margin: 0;
+}
+.section1 .p2 {
+	box-sizing: border-box;
+	display: block;
+	width: 660px;
+	font-size: 15px;
+	color: #000;
+	margin: 8px 0 0 0;
+}
+.section1 .images {
+	box-sizing: border-box;
+	display: block;
+	width: 644px;
+	padding: 8px;
+	margin: 10px 0 8px 0;
+	border: 1px solid silver;
+}
+.section1 .images .image1 {
+	margin: 0 0 8px 0;
+}
+.section1 .images .image3 {
+	padding: 0 7px 0 7px;
+}
+.section1 .images .image4 {
+	padding: 0 7px 0 0;
+}
+.section1 .foot {
+	font-size: 15px;
+	color: black;
+}
+.section1 .foot1 {
+	margin: 0 30px 0 5px;
+	font-size: 15px;
+	color: black;
+}
+.section1 .foot2 {
+	margin: 0 3px 0 8px;
+	font-size: 15px;
+	color: black;
+}
+.section1 .foot3 {
+	margin: 0 5px 0 50px;
+	font-size: 15px;
+	color: black;
+}
+.section2 {
+	margin: 15px 0 20px 0;
+}
+.content .foot {
+	font-size: 15px;
+	color: black;
+}

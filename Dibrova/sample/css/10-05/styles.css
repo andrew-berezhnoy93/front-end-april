@@ -1,0 +1,93 @@
+html. body {
+	padding: 0;
+	margin: 0;
+	min-width: 350px;
+}
+header,
+main,
+aside,
+footer {
+	display: block;
+}
+
+.clearfix:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+.container {
+	max-width: 1200px;
+	padding: 0 20px;
+	margin: auto;
+}
+header {
+	background: #000;
+	opacity: 0.5;
+	height: 50px;
+}
+.nav{
+	color: #fff;
+	font-size: 24px;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.nav > li{
+	float: left;
+	margin: 0 10px;
+}
+.dropdown {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.dropdown a {
+	display: block;
+}
+.dropdown li {
+	padding: 0;
+	border: 1px solid #fff;
+}
+.dropdown li+li {
+	border-top: 1px solid #fff;
+}
+main {
+	float: left;
+	background: lime;
+	width: 60%;
+	height: 500px;
+}
+aside {
+	float: right;
+	background:#555;
+	width: 35%;
+	height: 500px;
+}
+footer {
+	background: grey;
+	opacity: 0.5;
+	height: 50px;
+}
+@media screen and (max-width: 1300px) {
+	.container {
+		max-width: 1000px;
+	}
+	main {
+		width: 100%;
+		}
+	aside{
+		display: none;
+
+	}
+}
+
+ul {
+	text-align: center;
+}
+ul li {
+	display: inline-block;
+	height: 100px;
+	width: 100px;
+	background: #357;
+	font-size: 2vw; процент отвысоты окна
+}

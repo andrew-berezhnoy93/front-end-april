@@ -1,0 +1,32 @@
+.sidebar {
+	float: right;
+	width: $sidebarWidth;
+	background-color: $generalBgColor;
+	height: 500px;
+	margin-left: $sidebarMargin;
+
+	.main + & {
+		display: none;
+	}
+
+	@media screen and (max-width: 1000px) {
+		display: none;
+
+		.main + & {
+			display: block;
+			float: none;
+			width: auto;
+			margin-left: 0;
+			height: 50px;
+		}
+
+
+
+
+		/*float: none;
+		width: auto;
+		margin: 0 0 $sidebarMargin;*/
+
+
+	}
+}

@@ -1,0 +1,7 @@
+For compile this example you need to do:
+	- Install Ruby (http://rubyinstaller.org/ for Windows);
+	- Install SASS - execute in bash "gem install sass" or "sudo gem install sass";
+	- Open bash in this (Responsive_example) directory and execute "sass sass/index.scss css/styles.css";
+
+If you want to watch for changes in ".sass" files - you need to do:
+	- After installing Ruby and SASS execute in bash "sass --watch sass/index.scss:css/styles.css";

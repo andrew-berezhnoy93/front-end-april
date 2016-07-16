@@ -1,0 +1,352 @@
+.bodyStyle{
+	background-image: url("../images/backgroundPage.gif");
+	padding:0;
+	margin: 0;
+	font-family: Arial;
+}
+/* add header bg to wrapper */
+.wrapper{
+	width: 100%;
+	height: 130px;
+	background-image: url("../images/backgroundHeader.gif");
+	text-align:center;
+}
+.headerStyle{
+	display: inline-block;
+	position: relative;
+	width: 980px;
+	height: 115px;
+}
+.LogoHolder{
+	position: absolute;
+	left:0px;
+	margin-top: 50px;
+}
+.navigation {
+	position: absolute;
+	right: 4px;
+	margin-top: 40px;
+}
+.navigation ul li{
+	display: inline-block;
+	padding-left: 28px;
+}
+.navigation ul li a{
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 11px;
+	color: white;
+}
+.navigation ul li a.active{
+	text-decoration: underline;
+	font-weight: bold;
+	font-size: 11px;
+	color: #ffc600;
+}
+
+.mainStyle{
+	position: relative;
+	top:-4px;
+	display: inline-block;
+	background: white;
+	width: 950px;
+	border: 1px solid #eeeadc;
+	padding: 15px;
+	text-align: left;
+
+}
+.mainBlockHeading{
+	font-size: 20px;
+	font-weight: bold;
+	padding-bottom: 40px;
+}
+.mainBlockHeading div.leftHeading{
+	position: absolute;
+	left:15px;	
+}
+.mainBlockHeading h1,h3{
+	color: black;
+	margin:0;
+	font-size: 20px;
+	font-weight: bold;
+}
+.mainBlockHeading div.rightHeading{
+	position: absolute;
+	right:60px;	
+}
+/* .bordered - used in content block and aside to add monotype borders */
+.bordered {
+	background-color: #fdfbf1;
+	border: 1px solid #ededed;
+	padding: 5px;
+}
+.contentWrapper{
+	float: left;
+}
+.contentBlock{
+	background: white;
+	border: 1px solid #ededed;
+	padding: 15px;
+	padding-bottom: 0px;
+}
+.postHolder{
+	width: 590px;
+	height: 280px;
+	position: relative;
+	padding-bottom: 10px;
+	margin-bottom: 30px;
+}
+.postHolder div.Post {
+	width: 290px;
+	float: left;
+	color: #8d8d8d;
+}
+.postHolder div.Post p{
+	font-weight: bold;
+}
+.postHolder div.Post h2{
+	font-weight: bold;
+	color: #656565;
+	font-size: 36px;
+	margin:0px 0px 20px 0px;
+}
+.postHolder div.Post div.dividerSmall{
+	width:300px;
+	height: 1px;
+	background: #eaeaea;
+}
+/* right part of the post consist of image and button 'Launch project' */
+.rightPart{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+.imageHolder{
+	margin-bottom: 5px;
+	line-height: 0px;
+	/* line-height used to delete blank space under the image */
+}
+.launchButton {
+	background-color: #fdfbf1;
+	border: 1px solid #dbd6c6;
+	font-weight: bold;
+	font-size: 14px;
+	width: 140px;
+	height: 35px;
+	color: #656565;
+}
+/* Navigation under the posts */
+.pageNav ul li{
+	display: inline;
+	list-style: none;
+	background: white;
+	border: 0;
+	padding: 0;
+}
+.pageNav ul li input{
+	width: 34px;
+	height: 34px;
+	background-color: #fdfbf1;
+	border: 1px solid #dbd6c6;
+	font-weight: bold;
+	font-size: 14px;
+	color: #656565;
+}
+.pageNav ul li input.active {
+	background-color: #f0ede0;
+}
+.postHolder div.divider{
+	width:600px;
+	height: 1px;
+	background: #eaeaea;
+	position: absolute;
+	bottom: -8px;
+	left: -5px;
+}
+/* Block with feedbacks and advertise buttons */
+.feedbackBlock{
+	width: 300px;
+	float: right;
+	color: #8d8d8d;
+}
+.feedbacksHolder{
+	background-color: white;
+	border: 1px solid #ededed;
+	font-size: 11px;
+	line-height: 20px;
+}
+.feedbacksHolder ul{
+	padding: 0;
+	margin: 0;
+	padding: 10px;
+}
+
+.feedbacksHolder ul li{
+	list-style: none;
+	background-color: white;
+	background-image: url('../images/brackets.png');
+    background-repeat: no-repeat;
+    border: 0;
+}
+.feedbacksHolder ul li span::before{
+	content: '"';
+}
+.feedbacksHolder ul li span::after{
+	content: '"';
+}
+div.author{
+	font-weight: bold;
+	text-align: right;
+	color: #656565;
+}
+/* next class adds divider after 'li' */
+.feedbacksHolder ul li::after{
+	display: block;
+	margin: 10px auto;
+	width: 260px;
+	height: 1px;
+	background-color: #eaeaea;
+	content: '';
+}
+/* next class deletes divider after the last 'li' */
+.feedbacksHolder ul li+li::after{
+	display: none;
+}
+
+.feedbackBlock div.advertiseBlock ul{
+	margin: 10px auto;
+	padding: 0;
+	background: white;
+	border: 0;
+}
+/* duplicated class specialy for 'li' selector */
+.bordered li{
+	background-color: #fdfbf1;
+	border: 1px solid #ededed;
+	padding: 5px;
+}
+/* contains "Advertise here" buttons */
+.advertiseBlock ul li{
+	list-style: none;
+	display: inline-block;
+	width: 290px;
+	height: 50px;
+	
+	margin-bottom: 10px;
+	text-align: center;
+}
+.advertiseBlock ul li input{
+	width: 290px;
+	height: 50px;
+	background: #f0ede0;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #dfdcd0;
+	font-family: Myriad Pro;
+	font-weight: bold;
+	color: #656565;
+}
+.footerStyle{
+	display: inline-block;
+	width: 940px;
+	position: relative;
+	color: #656565;
+}
+.leftFooter {
+	float: left;
+}
+.rightFooter {
+	float: right;
+	font-size: 11px;
+	width: 300px;
+	text-align: right;
+	line-height: 15px;
+}
+
+/* contact page */
+.content-wrap {
+	width: 673px;
+	float: left;
+}
+.contact-wrapper {
+	width: 650px;
+	background: white;
+	border: 1px solid #ededed;
+	padding: 10px;
+}
+.contact-wrapper p {
+	font-weight: bold;
+}
+.small-wrap {
+	width: 615px;
+	background: white;
+	border: 1px solid #ededed;
+	padding: 10px;
+}
+.small-wrap p {
+	font-weight: bold;
+}
+.contact-form {
+	width: 560px;
+	margin-top: 10px;
+}
+.contact-form label {
+	display: inline-block;
+	width: 130px;
+	height: 40px;
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.contact-form label:before {
+	content: "Add your info";
+	display: block;
+	position: absolute;
+	font-size: 10px;
+	font-weight: initial;
+	top:20px;
+}
+.contact-form label:after {
+	content: '*';
+}
+.contact-form input {
+	width: 420px;
+}
+.big-field {
+	height: 300px;
+	vertical-align: top;
+}
+.relative {
+	position: relative;
+}
+.contact-aside {
+	float: left;
+	width: 240px;
+	padding: 5px;
+	margin-left: 10px;
+}
+.aside-content {
+	background: white;
+	border: 1px solid #ededed;
+	padding: 5px;
+	color: gray;
+}
+.lorem-div {
+	padding: 10px;
+	border-bottom: 1px solid #ededed;
+}
+.info-div {
+	padding: 10px;
+	font-weight: bold;
+	border-bottom: 1px solid #ededed;
+}
+.info-div p {
+	margin: 0;
+	padding: 0;
+}
+.twit-div {
+	padding: 10px;
+}
+.twit-div img {
+	width: 100%;
+}

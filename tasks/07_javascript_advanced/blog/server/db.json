@@ -1,0 +1,64 @@
+{
+  "articles": [
+    {
+      "id": 0,
+      "title": "One day of my life.",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, quidem vel tempore harum non laboriosam, ex possimus voluptatibus quae exercitationem illum dolores eos doloremque soluta aut! Consequatur minima, totam maxime.",
+      "author": "By Me!",
+      "photo": "https://randomuser.me/api/portraits/men/15.jpg",
+      "likes": 95,
+      "comments": [
+        {
+          "id": 1,
+          "author": "Some one",
+          "authorPoto": "https://randomuser.me/api/portraits/men/15.jpg",
+          "comment": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic tempore consequatur!",
+          "like": 2,
+          "createdAt": "Mon Jul 11 2016 20:43:20 GMT+0300 (EEST)"
+        }
+      ],
+      "createdAt": "Mon Jul 11 2016 20:43:20 GMT+0300 (EEST)",
+      "editedAt": "Mon Jul 11 2016 20:44:12 GMT+0300 (EEST)"
+    },
+    {
+      "id": 1,
+      "title": "Another day of my life.",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.  Accusamus, quidem vel tempore harum non laboriosam, ex possimus voluptatibus quae exercitationem illum dolores eos doloremque soluta aut! Consequatur minima, totam maxime.",
+      "author": "By Me!",
+      "photo": "https://randomuser.me/api/portraits/men/15.jpg",
+      "likes": 34,
+      "comments": [
+        {
+          "id": 1,
+          "author": "Some one",
+          "authorPoto": "https://randomuser.me/api/portraits/men/15.jpg",
+          "comment": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic tempore consequatur!",
+          "like": 2,
+          "createdAt": "Mon Jul 11 2016 20:43:20 GMT+0300 (EEST)"
+        }
+      ],
+      "createdAt": "Mon Jul 11 2016 20:43:20 GMT+0300 (EEST)",
+      "editedAt": "Mon Jul 11 2016 20:44:12 GMT+0300 (EEST)"
+    },
+    {
+      "id": 2,
+      "title": "Third one of my life.",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.  Accusamus,quidem vel tempore harum non laboriosam,ex possimus voluptatibusquae exercitationem illum dolores eos doloremque soluta aut!Consequatur minima,totam maxime.",
+      "author": "By Me!",
+      "photo": "https://randomuser.me/api/portraits/men/15.jpg",
+      "likes": 10,
+      "comments": [
+        {
+          "id": 1,
+          "author": "Some one",
+          "authorPoto": "https://randomuser.me/api/portraits/men/15.jpg",
+          "comment": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic tempore consequatur!",
+          "like": 2,
+          "createdAt": "Mon Jul 11 2016 20:43:20 GMT+0300 (EEST)"
+        }
+      ],
+      "createdAt": "Mon Jul 11 2016 20:43:20 GMT+0300 (EEST)",
+      "editedAt": "Mon Jul 11 2016 20:44:12 GMT+0300 (EEST)"
+    }
+  ]
+}

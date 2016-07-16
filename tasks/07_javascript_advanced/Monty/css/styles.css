@@ -1,0 +1,161 @@
+.container {
+	padding-top: 40px;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.container:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+h1 {
+	text-align: center;
+}
+
+.box-holder {
+	overflow: hidden;
+	margin-bottom: 20px;
+	padding-left: 210px;
+}
+
+.box {
+	padding-top: 25%;
+	width: 32%;
+	margin: 0.5%;
+	background: #777 url(../img/question-mark.png) no-repeat 50% 50%;
+	background-size: cover;
+	float: left;
+	cursor: pointer;
+}
+
+.box:hover {
+	background-color: #ef0;
+}
+
+.box.select {
+	background-color: #ef0;
+	box-shadow: inset 0 0 10px 10px #fd0;
+}
+
+.box.miss {
+	background-color: #fff;
+	background-image: url(../img/scooter.jpg);
+	cursor: default;
+	transition: transform 1s;
+	transform: rotateY(180deg);
+}
+
+.box.hit {
+	background-color: #fff;
+	background-image: url(../img/car.jpg);
+	cursor: default;
+	transition: transform 1s;
+	transform: scale(1.02);
+}
+
+#title {
+	position: relative;
+	margin-left: 200px;
+	padding-left: 15px;
+	transition: background-color 0.3s;
+}
+
+#title:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	right: 100%;
+	background: url(../img/presenter.png) no-repeat 50% 50%;
+    height: 325px;
+    width: 200px;
+    background-size: auto 100%;
+	border-radius: 10%;
+}
+
+#title.select:after {
+	background-position: 0 50%;
+}
+
+#title.success:after {
+	background-position: 100% 50%;
+	box-shadow: inset 0 0 10px 5px rgba(0, 255, 0, 0.3);
+}
+
+#title.miss:after {
+	box-shadow: inset 0 0 10px 5px rgba(255, 0, 0, 0.3);
+}
+.popup-holder {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1000;
+	background: rgba(255,255,255,0.8);
+	transition: all 1s;
+}
+.popup-holder.accepted {
+	opacity: 0;
+	z-index: -1;
+}
+.login-form {
+	padding: 15px;
+	background: #eee;
+	border: 2px solid #000;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 16px;
+	line-height: 24px;
+
+}
+.login-form form {
+	margin: 0;
+}
+ .row {
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+.row > label {
+	float: left;
+	width: 100px;
+}
+.row > input {
+	display: block;
+	overflow: hidden;
+	font-size: 16px;
+	line-height: 18px;
+	padding: 3px 7px;
+	border: none;
+}
+*:before,
+*:after {
+	display: table;
+	content: '';
+}
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+input[type="submit"] {
+	display: block;
+	width: 100px;
+	background: green;
+	border: none;
+	border-radius: 10px;
+	font-size: 16px;
+	line-height: 18px;
+	padding: 10px;
+	font-weight: bold;
+	color: #fff;
+	cursor: pointer;
+	margin: 0;
+	outline: none;
+
+}

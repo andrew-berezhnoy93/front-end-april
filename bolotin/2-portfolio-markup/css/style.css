@@ -1,0 +1,214 @@
+body{font-family: Arial, Helvetica, sans-serif;
+background-color: #f9f6ea;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+#header{height:130px;
+background: #fff url("../img/bg-header.jpg") repeat-x;}
+
+.header-wrapper
+{width: 980px;	
+margin: auto;
+}
+
+.logo{padding-top: 50px;}
+
+.navigation {float:right;}
+
+.navigation ul {text-align: right;
+margin-top: 50px;}
+
+.navigation ul li{display: inline;
+padding-left: 28px;
+}
+
+.navigation ul li a{
+text-transform: uppercase;
+text-decoration: none;
+color: #fff;
+font-size: 11px;
+font-weight: bold;
+}
+.navigation a.active {color:#ffc600;
+text-decoration: underline;
+}
+
+#main{
+width: 944px;	
+margin: auto;
+background-color: #fff;
+border: 1px solid #eeeadc;
+padding: 18px;
+margin-top: -17px;
+}
+
+#content{float: left;
+width: 634px;}
+
+#sidebar{float: right;
+width: 300px;
+}
+
+.posts, .clients-say{
+border: 1px solid #ececec;
+background-color: #f9f6ea;
+padding:6px;
+}
+
+h1, .sb-h1{font-size: 20px;
+font-weight: bold;
+ margin-bottom: 26px;
+ margin-top: 6px;
+ color:#000;
+}
+
+
+.sb-h1{
+ margin-bottom: 1px;
+}
+
+.white-container{background-color: #fff;
+padding:7px;
+border: 1px solid #ececeb;
+}
+
+.imagebox {float:right;
+width: 280px;
+margin-left: 10px;
+
+}
+.textbox {float: left;
+width: 298px;
+padding: 8px;
+}
+
+.preview{font-size:11px;
+line-height: 20px;
+color: #8d8d8d;
+border-top: 1px solid #eaeaea;
+padding: 10px 0 10px 10px;
+}
+
+
+
+h2{color: #656565;
+font-size: 36px;
+font-weight: bold;
+padding: 5px 0 20px 10px;
+}
+
+.imagebox img{ background-color: #fff;
+	border: 1px solid #eaeaea;
+	padding: 6px;
+	border-radius: 2px;
+
+	
+}
+
+.imagebox button{font-weight: bold;
+color:#656565;
+font-size:14px;
+background-color: #fdfbf1;
+border: 1px solid #dbd6c6;
+padding: 8px 16px;
+margin-top: 2px;
+margin-bottom: 7px;
+}
+
+article{
+float:left;
+border-bottom: 1px solid #eaeaea;
+margin-top: 30px;
+}
+
+article:nth-of-type(1){margin-top: 0px;}
+
+
+
+.pagination
+{float: left;
+padding: 10px 0 5px 13px;
+
+
+}
+
+.pagination ul li{
+color:#656565;
+font-size: 14px;
+font-weight: bold;
+display:inline-block;
+float:left;
+width: 30px;
+height: 22px;
+background-color: #fdfbf1;
+border: 1px solid #dbd6c6;
+text-align: center;
+padding-top: 8px;
+margin-right: 8px;
+}
+
+.pagination ul li.active{
+border: 1px solid #dbd6c6;
+background-color: #f0ede0;
+}
+
+.white-container blockquote{
+font-size: 11px;
+line-height: 20px;
+color:#8d8d8d;
+
+}
+
+.author{font-size: 11px;
+text-transform: uppercase;
+color: #656565;
+font-weight: bold;
+ line-height: 40px;
+ margin-left: 84px;
+}
+
+.quote {background: #fff url("../img/lapki.jpg") no-repeat 3% 1%;
+padding: 5px 0 5px 7px;
+border-bottom:1px solid #eaeaea;
+}
+
+
+.quote:nth-of-type(2){border-bottom:none;
+    margin: 15px 0 42px 0;
+}
+
+.clients-say:nth-of-type(2),
+.clients-say:nth-of-type(3) {margin-top: 10px;
+ padding-bottom: 4px;
+}
+
+.logo-footer{float: left;
+margin: 20px;}
+
+.copyright{float:right;
+margin: 20px;
+}
+
+.copyright span{font-size: 11px;
+color: #656565;
+display: block;
+text-align: right;
+margin-bottom: 8px;
+}
+
+footer {width: 980px;	
+margin: auto;
+min-height: 160px;
+}
+
+
+
+
+
+

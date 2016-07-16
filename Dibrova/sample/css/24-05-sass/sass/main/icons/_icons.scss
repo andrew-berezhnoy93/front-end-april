@@ -1,0 +1,26 @@
+%iconsSprite {
+	background: url(../img/sprite.png) no-repeat;
+	height: $iconSize;
+	width: $iconSize;
+	display: inline-block;
+}
+
+$i: 0;
+$j: 0;
+
+@while $j < $colIconsY {
+	.icon-#{$j}-#{$i} {
+		@extend %iconsSprite;
+		background-position: -#{$i * $iconSize} -#{$j * $iconSize};
+
+	}
+
+	$i: $i + 1;
+
+	@if $i > $colIconsX {
+		$i: 0; 
+		$j: $j + 1;
+	}
+
+}
+

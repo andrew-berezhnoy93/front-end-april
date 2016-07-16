@@ -1,0 +1,9 @@
+.main {
+	overflow: hidden;
+	height: 500px;
+	background-color: #ebe;
+
+	@media screen and (max-width: tabletDeviceWidth) {
+	margin-bottom: 20px;
+	}
+}

@@ -1,0 +1,12 @@
+/* container */
+.container {
+	@extend .clearfix;
+	
+	direction: rtl;
+	background-color: $containerBgColor;
+	max-width: $containerWidth;
+	padding: 0 $containerPadding;
+	margin: $centeredMargin;
+
+	color:$generalTextColor;
+}

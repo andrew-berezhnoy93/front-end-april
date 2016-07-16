@@ -1,0 +1,75 @@
+html, body {
+	padding: 0;
+	margin: 0;
+}
+
+.clearfix:after {
+	content: 'Clearfix hak';
+
+	clear: both;
+}
+
+.aligh-right {
+	float: right;
+	padding-left: 500px;
+}
+
+.container {
+	width:  1000px;
+	height: 
+	padding: 20px;
+	margin: 0 auto;
+	background-color: #eee;
+}
+
+/* content */
+
+#content {
+	height: 200px;
+	width: 200px;
+	background: orange;
+	float: left;
+	margin-right: 10px;
+	padding: 10px
+}
+
+/* Sidebar */
+
+#sidebar {
+	height: 300px;
+	width: 150px;
+	background-color: green;
+	float: right;
+	color: white;
+	
+}
+.icon-01,
+.icon-02,
+.icon-03 {
+	background-color: #fff;
+	background-image: url(sprite.png);
+	background-repeat: non-repeat;
+	background-position: 0 0;
+	height: 77px;
+	width: 77px;
+	float: left;
+}
+	.ico + .ico {
+		margin-left: 20px;
+	}
+
+.icon-02 {
+	background-position: -77px 0;
+}
+.icon-03 {
+	background-position: -154px 0;
+}
+.icon-01:hover{
+	background-position:  0 100%;
+}
+.icon-02:hover{
+	background-position: -77px -154px;
+}
+.icon-03:hover{
+	background-position: -154px -154px;
+}

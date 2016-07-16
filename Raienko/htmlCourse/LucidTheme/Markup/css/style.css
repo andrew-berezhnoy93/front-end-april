@@ -1,0 +1,384 @@
+.styleHtml{
+	background-color: white;
+	background-image:url('../images/backgroundMain.gif');
+}
+	#bodyCSS{
+		margin: 0px;
+	}
+		.wrapper{
+			font-family:Lucida Sans;
+			text-align: center;
+		}
+			.HeaderBG{
+				background-color:#2e8281;
+				height: 34px;
+				opacity:0.75;
+				position: relative;
+				z-index: 0;
+			}
+				/* next block adds shadow after header */
+				.HeaderBG::after{
+					display: block;
+					content: "";
+					background-color: black;
+					opacity: 0.04;
+					width:100%;
+					height:10px;
+					position: absolute;
+					top:34px;
+					z-index: 0;
+				}
+/* inline wrapper to center all content (header + main + footer) */
+.LittleWrap{
+	display: inline-block;
+	width: 1080px;
+	text-align: left;
+}
+/* header started */
+.HeaderTopPart{
+	text-align: right;
+	position: relative;
+	top:-35px;
+	right: 0px;
+}
+	.navigation ul{
+		margin: 0px;
+		padding-top: 10px;
+		font-size:12px;
+		text-shadow:1px 1px 2px black;
+		letter-spacing: 0.5px;
+	}
+		.navigation ul li{
+			display: inline;
+		}
+		.navigation ul li a{
+			text-decoration: none;
+			color:white;
+		}
+.HeaderBottomPart{
+	position: relative;
+	margin-bottom: 75px;
+}
+	.LucidThemeHolder{
+		margin-top:40px;
+	}
+		.LucidThemeHolder img{
+			font-size: 25px;
+			font-family: Tahoma;
+		}
+	.HeaderBottomPart div.SomeRightLinks{
+		position: absolute;
+		right:100px;
+		top:-20px;
+	}
+
+	/* next block will be used for Header and Footer */
+	.SomeRightLinks{
+		font-size:11px;
+		line-height:21px;
+	}
+		.SomeRightLinks a{
+			text-decoration: none;
+			color:#7f7f81;
+		}
+		.SomeRightLinks ul li{
+			padding-left: 22px;
+		}
+		.rssIcon{
+			list-style: none;
+			background: url('../images/rssIcon.gif') no-repeat left center;
+		}
+		.mailIcon{
+			list-style: none;
+			background: url('../images/mailIcon.gif') no-repeat left center;
+		}
+/* header finished */
+
+/* Starting content block */
+.contentBlock{
+	position: relative;
+	float: left;
+}
+	.PostHolder{
+		position: relative;
+		height: 520px;
+		width: 760px;
+	}
+		/* Meta Part of PostHolder */
+		.MetaPart{
+		font-size:11px;
+		color:#989898;
+		line-height: 22px;
+		}
+			.MetaPart a{
+				text-decoration: none;
+				color: #5c5c5f;
+			}
+				.IconedMetaList{
+					margin-left: 0px;
+					padding-left: 10px;
+				}
+					.IconedMetaList li{
+
+						line-height: 22px;
+						background-repeat: no-repeat;
+						background-position: left center;
+						padding-left: 22px;
+						list-style: none;
+					}
+					.heartIcon{
+						background: url('../images/heartIcon.gif');
+					}
+
+					.commentIcon{
+						background: url('../images/commentIcon.gif');
+					}
+
+					.contactIcon{
+						background: url('../images/contactIcon.gif');
+					}	
+				.deviderMeta{
+					width:170px;
+					height: 2px;
+					background-color: #ceced0;
+					margin-left:10px;
+				}
+				.unMarkedUl {
+					margin-left:10px;
+					padding-left:0px;
+					list-style: none;
+				}
+					.unMarkedUl ul{
+						margin-left:0px;
+						padding-left: 0px;
+						list-style: none;
+						line-height: 12px;
+					}
+		/* Meta part of PostHolder finished */
+/* Post started*/
+.PostBackground {
+	position: absolute;
+	background-color: white;
+	border: 1px solid #d4d4d4;
+	border-radius: 5px 5px;
+	width:600px;
+	height: 490px;
+	z-index:0;
+	top:10px;
+	left:10px;
+}
+.PostShadow {
+	position: absolute;
+	background-color: black;
+	width: 620px;
+	height: 510px;
+	opacity: 0.04;
+	z-index: 1;
+	top:0px;
+	border-radius: 5px 5px;
+}
+.Post {
+	width: 540px;
+	height: 390px;
+	left:200px;
+	top:0px;
+	position: absolute;
+}
+	.Post p {
+		font-size: 13pt;
+		line-height: 17px;
+	}
+
+	.TheArticle {
+		position: absolute;
+		z-index: 2;
+		background-color: white;
+		top:16px;
+		left:16px;
+		width: 540px;
+		height: 390px;
+		padding-left: 15px;
+		padding-right: 35px;
+
+	}
+	.ImageHolder{
+		position: absolute;
+		z-index: 2;
+		top:420px;
+		left:10px;
+		width:590px;
+	}
+		.ImageHolder ul{
+			padding: 0;
+			margin: 0;
+		}
+		.ImageHolder ul li{
+			display: inline;
+			padding-left: 15px;
+		}
+		.ImageHolder img {
+			margin: auto;
+		    border: 4px solid transparent;
+		    -moz-border-image: -moz-linear-gradient(top, #78c1ba 0%, #518487 100%);
+		    -webkit-border-image: -webkit-linear-gradient(top, #78c1ba 0%, #518487 100%);
+		    border-image: linear-gradient(to bottom, #78c1ba 0%, #518487 100%);
+		    border-image-slice: 1;
+		}
+	.pagesNav {
+		padding-left:250px;
+	}
+		.pagesNav li{
+			display: inline;
+		}
+		.pagesNav li input{
+			height:31px;
+			width:31px;
+			background:white;
+			border-color:#d5d5d7;
+			border-width:1px;
+		}
+		.pagesNav li input.active{
+			background:#ededed;
+			border-color:#567f7b;
+		}
+/* Post block finished */
+/* Content block finished */
+
+/* starting Aside block */
+.AsideBlock{
+	float: right;
+	width: 230px;
+	top: 0px;
+	right: 0px;
+}
+	
+	.AsideBlock ul {
+		padding: 0;
+		margin:0;
+	}
+		.InlineBlocks li{
+			display: inline-block;
+			text-align: center;
+		}
+			.InlineBlocks li a{
+				text-decoration: none;
+			}
+		.followersText {
+			color:#676769;
+			line-height:3px;
+		}
+			.followersText p{
+				font-size:14px;
+				margin-top:5px;
+				margin-bottom:0px;
+			}
+			.followersText span{
+				font-size:9px;
+			}
+	.deviderAside{
+		width:230px;
+		height: 1px;
+		background-color:#d7d7d9;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	.SearchForm{
+		margin-bottom: 20px;
+	}
+		.SearchForm input.SearchField{
+			width: 230px;
+			height: 36px;
+		}
+		.SearchForm input.SearchSubmit{
+			background: #2a6061;
+			opacity: 0.8;
+			border: 0;
+			border-radius: 3px 3px;
+			width: 230px;
+			height: 28px;
+			color:white;
+		}
+	.adsBlock{
+		width: 235px;
+		height: 235px;
+		padding-left: 0px;
+	}
+	.focusList {
+		margin-top:37px;
+		}
+		.focusList p{
+			margin-bottom:2px;
+		}
+		.focusList ul {
+			list-style: none;
+			padding-left: 0;
+			margin-left: 0;
+			line-height:23px;
+		}
+		.focusList ul input {
+			border-radius: 10px 10px;
+			text-align: left;
+			background-color: white;
+			border: 0;
+			color: #d1d1d1;
+		}
+		.focusList input.active {
+			width: 225px;
+			color:#0b6755;
+		}
+/* Aside finished */
+
+/* footer starts */
+	
+.footerBlock{
+
+	text-align: center;
+	font-size: 11px;
+}
+	.footerHolder{
+		width: 1030px;
+		display: inline-block;
+
+		position: relative;
+	}
+	.footerBlock div.SomeRightLinks{
+
+		width: 280px;
+		text-align: left;
+		position: absolute;
+		right: 0px;
+	}
+
+	.deviderFooter{
+		margin-top: 70px;
+		display:inline-block;
+		width:1010px;
+		height:1px;
+		background:#d1d1d3;
+		position:center;
+}
+.footerCopyright{
+	float:left;
+	text-align:left;
+	color:#5f5f5f;
+	line-height:18px;
+	margin-top:10px;
+}
+	.footerCopyright p{
+		margin:0px;
+	}
+.footerNav {
+	float:right;
+}
+	.footerNav ul{
+	}
+	.footerNav li{
+		list-style:none;
+		display:inline-block;
+		margin-right: 20px;
+	}
+	.footerNav li a{
+		text-decoration:none;
+		color:#6c6c6e;
+		text-transform: uppercase;
+	}

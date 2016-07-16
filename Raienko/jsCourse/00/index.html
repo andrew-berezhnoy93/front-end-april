@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <title>js is comming</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+  <main class="main-style clearfix">
+    <h1>Chalenges</h1>
+    <section>  
+      <div class="question">
+        <h2>1. What number's bigger</h2>
+        <p>Write a function named greaterNum that:
+          takes 2 arguments, both numbers.
+          returns whichever number is the greater (higher) number.
+          Call that function 2 times with different number pairs, and log the output to make sure it works (e.g. "The greater number of 5 and 10 is 10.").
+        </p>
+        <form class="formatedForm clearfix" onsubmit="firstQuest();return false;">
+          <input type="submit" value="press me" class="submit-btn right-floated" />
+          <input type="number" id="quest1input1" class="left-floated" placeholder="Enter first number" required />
+          <input type="number" id="quest1input2" class="left-floated" placeholder="Enter second number" required />   
+        </form>
+        <div id="firstAnswer" class="answer">Answer</div>
+      </div>
+    </section>
+    <section>  
+      <div class="question">
+      <h2>2. The World Translator</h2>
+      <p>Write a function named helloWorld that:
+        takes 1 argument, a language code (e.g. "es", "de", "en")
+        returns "Hello, World" for the given language, for atleast 3 languages. It should default to returning English.
+        Call that function for each of the supported languages and log the result to make sure it works.
+      </p>
+        <form class="formatedForm clearfix">
+          <input type="button" 
+            id="quest2submit" 
+            value="press me" 
+            onclick="secondQuest()" 
+            class="submit-btn right-floated" />
+          <input type="text" 
+            id="quest2input1" 
+            class="left-floated" 
+            value="Hello World!" 
+            readonly />
+          <select id="quest2input2">
+            <option>English</option>
+            <option>Espaniol</option>
+            <option>Deutsch</option>
+          </select>   
+        </form>
+        <div id="secondAnswer" class="answer">Translation</div>
+      </div>
+    </section>
+    <section>  
+      <div class="question">
+      <h2>3. The Grade Assigner</h2>
+      <p>Write a function named assignGrade that:
+        takes 1 argument, a number score.
+        returns a grade for the score, either "A", "B", "C", "D", or "F".
+        Call that function for a few different scores and log the result to make sure it works.
+      </p>
+        <form class="formatedForm clearfix" onsubmit="thirdQuest(); return false;">
+          <input type="number" 
+            min="0" 
+            max="100" 
+            id="quest3input" 
+            placeholder="Mark [0-100]" 
+            required 
+            class="left-floated quest3input" />
+          <input type="submit" 
+            value="press me"
+            class="submit-btn right-floated" />
+        </form>
+        <div id="thirdAnswer" class="answer">Your Mark</div>
+      </div>
+    </section>
+    <section>  
+      <div class="question">
+      <h2>4. The Pluralizer</h2>
+      <p>Write a function named pluralize that:
+        takes 2 arguments, a noun and a number.
+        returns the number and pluralized form, like "5 cats" or "1 dog".
+        Call that function for a few different scores and log the result to make sure it works.
+        Bonus: Make it handle a few collective nouns like "sheep" and "geese".
+      </p>
+        <form class="formatedForm clearfix" onsubmit="fourthQuest(); return false;">
+          <input type="submit"  
+            value="take"
+            class="submit-btn right-floated" />
+          <input type="text" 
+            id="quest4input1" 
+            class="left-floated" 
+            required 
+            placeholder="Input noun [Aa-Zz]"
+            pattern="[A-Za-z]{3,}" /> 
+          <input type="number"
+            id="quest4input2"
+            required 
+            class="left-floated"  
+            min="0"
+            placeholder="How many?" /> 
+        </form>
+        <div id="fourthAnswer" class="answer farm">You have : </div>
+      </div>
+    </section>
+    <section>
+      <h2>5. Small tasks</h2>
+      <form>
+        <select id="smallTasks">
+          <option value="0">choose task</option>
+          <option value="1">task 1</option>
+          <option value="2">task 2</option>
+          <option value="3">task 3</option>
+          <option value="4">task 4</option>
+          <option value="5">task 5</option>
+          <option value="6">task 6</option>
+          <option value="7">task 7</option>
+          <option value="8">task 8</option>
+          <option value="9">task 9</option>
+          <option value="10">task 10</option>
+        </select>
+        <input type="button" onclick="smallTasksStarter()" value="choose">
+        <ul class="descriptions">
+          <li>
+            <p id="taskDescript0" class="dissabled enabled">
+              Please, choose option from list above to proceed
+            </p>
+          </li>
+          <li>
+            <p id="taskDescript1" class="dissabled">
+              1. Если переменная a равна нулю, то выведите 'Верно!', иначе выведите 'Неверно!'. Проверьте работу скрипта при a, равном 1, 0, -3.
+            </p>
+          </li>
+          <li>
+            <p id="taskDescript2" class="dissabled">
+              2. Если переменная a больше нуля, то выведите 'Верно!', иначе выведите 'Неверно!'. Проверьте работу скрипта при a, равном 1, 0, -3.
+            </p>
+          </li>
+          <li>
+            <p id="taskDescript3" class="dissabled">
+              3. Если переменная a меньше нуля, то выведите 'Верно!', иначе выведите 'Неверно!'. Проверьте работу скрипта при a, равном 1, 0, -3.
+            </p>
+          </li>
+          <li>
+            <p id="taskDescript4" class="dissabled">
+              4. Если переменная a больше или равна нулю, то выведите 'Верно!', иначе выведите 'Неверно!'. Проверьте работу скрипта при a, равном 1, 0, -3.
+            </p>
+          </li>
+          <li>
+            <p id="taskDescript5" class="dissabled">
+              5. Если переменная a меньше или равна нулю, то выведите 'Верно!', иначе выведите 'Неверно!'. Проверьте работу скрипта при a, равном 1, 0, -3.
+            </p>
+          </li>
+          <li>
+            <p id="taskDescript6" class="dissabled">
+              6. Если переменная a не равна нулю, то выведите 'Верно!', иначе выведите 'Неверно!'. Проверьте работу скрипта при a, равном 1, 0, -3.
+            </p>
+          </li>
+          <li>
+            <p id="taskDescript7" class="dissabled">
+              7. Если переменная a равна 'test', то выведите 'Верно!', иначе выведите 'Неверно!'. Проверьте работу скрипта при a, равном 'test', 'тест', 3.
+            </p>
+          </li>
+          <li>
+            <p id="taskDescript8" class="dissabled">
+              8. Если переменная a равна '1' и по значению и по типу, то выведите 'Верно!', иначе выведите 'Неверно!'. Проверьте работу скрипта при a, равном '1', 1, 3.
+            </p>
+          </li>
+          <li>
+            <p id="taskDescript9" class="dissabled">
+              9. Если переменная var равна true, то выведите 'Верно!', иначе выведите 'Неверно!'. Проверьте работу скрипта при var, равном true, false. Напишите два варианта скрипта — с короткой записью и с длинной.
+            </p>
+          </li>
+          <li>
+            <p id="taskDescript10" class="dissabled">
+              10.Если переменная test не равна true, то выведите 'Верно!', иначе выведите 'Неверно!'. Проверьте работу скрипта при test, равном true, false. Напишите два варианта скрипта — с короткой записью и с длинной.
+            </p>
+          </li>
+        </ul>
+      </form>
+      <form class="clearfix" onsubmit="smallTasksChecker();return false;">
+        <input type="submit" value="press me" class="submit-btn right-floated">
+        <input type="text" id="smallTasksInput" placeholder="Set value" class="left-floated" required>
+        <input type="text" id="smallTasksAnswer" value="Answer" class="left-floated answer answer-small" readonly>
+        <input id="smallTasksTrick" class="dissabled" value="" />
+      </form>
+    </section>
+    <section class="special">
+      <h2>6. Values and primitives</h2>
+      <div class="special-container">
+        <h3>6.1 Task</h3>
+        <p>1. Store the following into variables: number of children, partner's name, geographic location, job title.
+          Output your fortune to the screen like so: "You will be a X in Y, and married to Z with N kids."
+        </p>
+        <form onsubmit="storyGenerator();return false;">
+          <input id="childrenAmountInp" type="number" min="0" placeholder="Number of children" required>
+          <input id="partnersNameInp" type="text" placeholder="Partner's name" required>
+          <input id="cityTitleInp" type="text" placeholder="City" required>
+          <input id="jobTitleInp" type="text" placeholder="Job title" required>
+          <input type="submit" class="big-green-btn" value="Generate story">
+        </form>
+        <p id="storyLine" class="dissabled">
+          You will be <span id="jobTitle"></span> 
+          in <span id="cityTitle"></span>, 
+          and married to <span id="partnersName"></span> 
+          with <span id="childrenAmount"></span> kids.
+        </p>
+      </div>
+      <div class="special-container">
+        <h3>6.2 Task</h3>
+        <p>2. Store the current year in a variable.
+          Store their birth year in a variable.
+          Calculate their 2 possible ages based on the stored values.
+          Output them to the screen like so: "They are either NN or NN", substituting the values.
+        </p>
+        <form onsubmit="calcAge();return false;">
+          <input id="curYear" type="number" readonly value="2016">
+          <input id="birthYear" type="number" min="1900" max="2016" placeholder="input birth year" required>
+          <input id="calcYear" type="submit" class="big-green-btn">
+          <input id="approxYear" type="text" readonly value="Answer">
+        </form>
+      </div>
+      <div class="special-container">
+        <h3>6.3 Task</h3>
+        <p>3. Store your current age into a variable.
+          Store a maximum age into a variable.
+          Store an estimated amount per day (as a number).
+          Calculate how many you would eat total for the rest of your life.
+          Output the result to the screen like so: "You will need NN to last you until the ripe old age of X".
+        </p>
+        <form onsubmit="calcFood();return false;">
+          <input id="curAge" type="number" min="0" max="140" placeholder="input current age" required>
+          <input id="maxAge" type="number" min="1" max="150" placeholder="input MAX age" required>
+          <input id="estAmount" type="number" min="0.1" placeholder="Food kg/day" required>
+          <input type="submit" class="big-green-btn">
+          <input id="approxFood" type="text" value="Answer" readonly>
+        </form>
+      </div>
+      <div class="special-container">
+        <h3>6.4 Task</h3>
+        <p>4. Calculate properties of a circle, using the definitions. Store a radius into a variable.
+          Calculate the circumference based on the radius, and output "The circumference is NN".
+          Calculate the area based on the radius, and output "The area is NN".
+        </p>
+        <form onsubmit="calcCrcl();return false;">
+          <input id="crclRad" type="number" min="1" required placeholder="Enter radius">
+          <input type="submit" class="big-green-btn">
+          <input id="crclLength" type="text" readonly value="Length">
+          <input id="crclArea" type="text" readonly value="Area">
+        </form>
+      </div>
+      <div class="special-container">
+        <h3>6.5 Task</h3>
+        <p>5. It's hot out! Let's make a converter based on the steps here: http://www.mathsisfun.com/
+          temperature-conversion.html.
+          Store a celsius temperature into a variable.
+          Convert it to fahrenheit and output "NN°C is NN°F".
+          Now store a fahrenheit temperature into a variable.
+          Convert it to celsius and output "NN°F is NN°C."
+        </p>
+          <h4>Celcius to Fahrenheit</h4>
+          <form onsubmit="celcToFar();return false;">
+            <input id="celToFar" type="number" min="-273" placeholder="input Celc deg." required>
+            <input type="submit" class="big-green-btn" >
+            <input id="displayCTF" type="text" readonly value=" F deg.">
+          </form>
+          <h4>Fahrenheit to Celcius</h4>
+          <form onsubmit="farToCelc();return false;">
+            <input id="farToCel" type="number" min="-459" placeholder="input F deg." required>
+            <input type="submit" class="big-green-btn" >
+            <input id="displayFTC" type="text" readonly value=" Celc deg.">
+          </form>
+      </div>
+    </section>
+  </main>
+  <script type='text/javascript' src='js/magic.js'></script>
+</body>
+</html>

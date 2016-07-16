@@ -1,0 +1,51 @@
+@font-face {
+  font-family: 'HelveticaLTStd-Light';
+  src: url('../fonts/HelveticaLTStd-Light/HelveticaLTStd-Light.eot');
+  src: url('../fonts/HelveticaLTStd-Light/HelveticaLTStd-Light.woff2') format('woff2'),
+       url('../fonts/HelveticaLTStd-Light/HelveticaLTStd-Light.woff') format('woff'),
+       url('../fonts/HelveticaLTStd-Light/HelveticaLTStd-Light.ttf') format('truetype'),
+       url('../fonts/HelveticaLTStd-Light/HelveticaLTStd-Light.svg#HelveticaLTStd-Light') format('svg'),
+       url('../fonts/HelveticaLTStd-Light/HelveticaLTStd-Light.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HelveticaLTStd-Bold';
+  src: url('../fonts/HelveticaLTStd-Bold/HelveticaLTStd-Bold.eot');
+  src: url('../fonts/HelveticaLTStd-Bold/HelveticaLTStd-Bold.woff2') format('woff2'),
+       url('../fonts/HelveticaLTStd-Bold/HelveticaLTStd-Bold.woff') format('woff'),
+       url('../fonts/HelveticaLTStd-Bold/HelveticaLTStd-Bold.ttf') format('truetype'),
+       url('../fonts/HelveticaLTStd-Bold/HelveticaLTStd-Bold.svg#HelveticaLTStd-Bold') format('svg'),
+       url('../fonts/HelveticaLTStd-Bold/HelveticaLTStd-Bold.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'HelveticaLTCondensed-Bold';
+  src: url('../fonts/HelveticaLTCondensed-Bold/HelveticaLTCondensed-Bold.eot');
+  src: url('../fonts/HelveticaLTCondensed-Bold/HelveticaLTCondensed-Bold.woff2') format('woff2'),
+  	   url('../fonts/HelveticaLTCondensed-Bold/HelveticaLTCondensed-Bold.woff') format('woff'),
+       url('../fonts/HelveticaLTCondensed-Bold/HelveticaLTCondensed-Bold.ttf') format('truetype'),   
+       url('../fonts/HelveticaLTCondensed-Bold/HelveticaLTCondensed-Bold.svg#HelveticaLTCondensed-Bold') format('svg'),
+       url('../fonts/HelveticaLTCondensed-Bold/HelveticaLTCondensed-Bold.eot?#iefix') format('embedded-opentype');   
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+@font-face {
+  font-family: 'HelveticaLTStd-Roman';
+  src: url('../fonts/HelveticaLTStd-Roman/HelveticaLTStd-Roman.eot');
+  src: url('../fonts/HelveticaLTStd-Roman/HelveticaLTStd-Roman.woff2') format('woff2'),
+       url('../fonts/HelveticaLTStd-Roman/HelveticaLTStd-Roman.woff') format('woff'),
+       url('../fonts/HelveticaLTStd-Roman/HelveticaLTStd-Roman.ttf') format('truetype'),
+       url('../fonts/HelveticaLTStd-Roman/HelveticaLTStd-Roman.svg#HelveticaLTStd-Roman') format('svg'),
+       url('../fonts/HelveticaLTStd-Roman/HelveticaLTStd-Roman.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+

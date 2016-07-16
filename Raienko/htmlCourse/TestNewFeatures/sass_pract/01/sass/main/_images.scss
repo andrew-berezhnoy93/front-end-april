@@ -1,0 +1,22 @@
+/* sprite settings */
+
+// % pseudo class . used to extend other classes;
+%icons-sprite {
+	background: url("../images/sprite.png");
+	width: 40px;
+	height: 40px;
+}
+$i: 0;
+$j: 0;
+
+@while $i < $icons-col-horizontal {
+	$j:0;
+	@while $j < $icons-col-vertical {
+		.icon-#{$i}-#{$j} {
+			@extend %icons-sprite;
+			background-position: #{-$i * $icons-size} #{-$j * $icons-size};
+		}
+		$j : $j + 1;
+	}
+	$i : $i + 1;
+}

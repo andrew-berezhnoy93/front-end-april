@@ -1,0 +1,7 @@
+.container {
+	@extend .clearfix;
+
+	max-width: $containerWidth;
+	padding: 0 $containerPadding;
+	margin: 0 auto;
+}

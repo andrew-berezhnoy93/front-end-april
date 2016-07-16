@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,UAAU;EACT,OAAO,EAAE,CAAC;EACV,MAAM,EAAE,CAAC;;AAUV,cAAe;EACd,OAAO,EAAE,KAAK;;AAEf,CAAE;EACA,KAAK,EALC,IAAI;;AAQZ,yCAAyC;ACnBzC,MAAO;EACN,OAAO,EAAE,CAAC;;ACAX,OAAQ;EACP,MAAM,EAAE,KAAK;EACb,UAAU,EAAE,IAAI",
+"sources": ["../base/_reset.scss","../base/_form-reset.scss","../header/_header.scss"],
+"names": [],
+"file": "styles.css"
+}

@@ -1,0 +1,239 @@
+body {
+	margin: 0;
+	background: #f9f6ea;
+	color: #8d8d8d;
+	font: 11px/1.2 Arial, Helvetica, sans-serif;
+	min-width: 980px;
+}
+a {
+	text-decoration: none;
+	color: #656565;
+}
+a:hover {
+	text-decoration: underline;
+}
+h2, h3 {
+	margin: 0;
+}
+header, footer, article, section, nav, main {
+	display: block;
+}
+#header {
+	background: #174245 url(../img/head-bg.jpg);
+	padding: 53px 0 50px;
+}
+footer {
+	width: 980px;
+	margin: 0 auto;
+}
+#wrapper {
+	margin-bottom: 100px;
+}
+.container {
+	width: 980px;
+	margin: 0 auto;
+}
+.container:after, #main:after, #footer:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+.logo {
+	float: left;
+}
+.logo a {
+	font-size: 40px;
+	width: 227px;
+	height: 29px;
+	display: block;
+	background: url(/Сергей/front-end-april/Dibrova/01_html_base/portfolio/logo.png) no-repeat;
+	text-indent: -9999px;
+	overflow: hidden;
+}
+.navigation {
+	float: right;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.navigation ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: inline-block;
+}
+.navigation ul li {
+	display: inline-block;
+	vertical-align: top;
+}
+.navigation ul li+li {
+	margin: 0 0 0 23px;
+}
+.navigation ul a {
+	display: block;
+	color: #fff;
+}
+.navigation ul .active a,
+.navigation ul a:hover {
+	color: #ffc600;
+	text-decoration: underline;
+}
+#main {
+	background: #fff;
+	width: 948px;
+	margin: -16px auto 0;
+	border: 1px solid #eeeedc;
+	padding: 22px 15px 16px;
+}
+#content {
+	float: left;
+	width: 637px;
+}
+.title {
+	text-transform: capitalize;
+	font-size: 20px;
+	line-height: 22px;
+	color: #000;
+	letter-spacing: -1px;
+	margin: 0 0 23px;
+}
+.project-titles {
+	background: #fdfbf1;
+	border: 1px solid #eeeedc;
+	padding: 7px;
+}
+.project-titles2 {
+	background: #fff;
+	border: 1px solid #eeeedc;
+	padding: 15px;
+}
+.project .project-content {
+	font-size: 11px;
+	line-height: 20px; /*межстрочный интервал*/
+	padding-right: 11px;
+	padding-bottom: 50px;
+}
+.upper {
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.project h2 {
+	text-transform: capitalize;
+	font-size: 36px;
+	line-height: 38px;
+	margin: 0 0 20px;
+	color: #656565;
+	padding: 0 0 20px;
+}
+.project p {
+	margin: 0;
+}
+.contact_form {
+	background: #fdfbf1;
+	border: 1px solid #eeeedc;
+	padding: 7px;
+}
+.contact_form2 {
+	font-size: 11px;
+	line-height: 20px; /*межстрочный интервал*/
+	background: #fff;
+	border: 1px solid #eeeedc;
+	padding: 13px;
+}
+.name_holder {
+	margin-top: 30px;
+}
+.your_name {
+	width: 120px;
+	float: left;
+}
+.form_name {
+	display: inline-block;
+}
+.form_name .name #name {
+	width: 400px;
+	height: 30px;
+}
+.clearfix {
+  clear: both;
+}
+.email_holder {
+	margin-top: 20px;
+}
+.your_email {
+	width: 120px;
+	float: left;
+}
+.form_email {
+	display: inline-block;
+}
+.form_email .email #email {
+	width: 400px;
+	height: 30px;
+}
+.message_holder {
+	margin-top: 20px;
+}
+.your_message {
+	width: 120px;
+	float: left;
+}
+.form_message {
+	display: inline-block;
+}
+.form_message .message #message {
+	width: 400px;
+	height: 300px;
+}
+.message_holder .form_message .more {
+	display: inline-block;
+	vertical-align: block;
+	background: #fdfbf1;
+	border: 1px solid #dbd6c6;
+	font-size: 14px;
+	font-weight: bold;
+	color: #656565;
+	text-decoration: none;
+	text-transform: capitalize;
+	padding: 6px 18px 9px;
+}
+.message_holder .form_message .more:hover {
+	background: #f0ede0;
+}
+.sidebar {
+	float: right;
+	width: 303px;
+}
+.saying {
+	background: #fdfbf1;
+	border: 1px solid #eeeedc;
+	padding: 7px;
+}
+.saying2 {
+	background: #fff;
+	border: 1px solid #eeeedc;
+	padding: 8px 9px 40px 21px;
+}
+.comment {
+	line-height: 20px;
+}
+.comment2 {
+	font-weight: bold;
+	color: #000;
+	border-top: 1px solid #eaeaea;
+	border-bottom: 1px solid #eaeaea;
+}
+.logo-footer a {
+	font-size: 40px;
+	width: 227px;
+	height: 29px;
+	display: block;
+	background: url(/Сергей/divas/Dibrova/01_html_base/portfolio/logo-footer.png) no-repeat;
+	text-indent: -9999px;
+	overflow: hidden;
+}
+.footer-logo {
+	float: left;
+}
+.copyright {
+	margin-left: 600px;
+}

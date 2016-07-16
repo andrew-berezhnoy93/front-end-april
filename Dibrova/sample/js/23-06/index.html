@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="main.js"></script>
+    <style>
+    body * {
+    	margin: 10px;
+    	padding: 10px;
+    	border: 1px solid black;
+    }
+
+    </style>
+</head>
+
+<body onclick="alert('СЮДА ОБРАБОТКА НЕ ДОЙДЕТ')">
+<button
+onclick="event.stopPropagation"> <!-- останавливает событие -->
+	
+</button>
+
+	<!-- <div onclick="alert('Обработчик для Div сработал!')">
+			<em>Кликните на <code>DIV</code></em>	
+	</div> -->
+
+	<form>
+		FORM
+		<div> DIV
+			<p>P</p>
+		</div>
+	</form>
+
+	<script>
+		var form = document.querySelectorAll('form, div, p');
+		for (var i=0; i < form.length; i++) {
+			form[i].addEventListener("click", ligths, true)
+			form[i].addEventListener("click", ligths, false)
+		}
+
+		function ligths() {
+			
+		}
+	</script>
+	
+</body>
+
+</html>

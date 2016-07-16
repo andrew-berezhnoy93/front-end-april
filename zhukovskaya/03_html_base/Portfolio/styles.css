@@ -1,0 +1,33 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+#wrapper {
+	background-image: url(images/bg.jpg);
+	margin: 0;
+	padding: 0;
+}
+#header {
+	background-image: url(images/bg-top.png) ;
+	background-repeat: repeat;
+	margin: 0;
+	padding: 0;
+}
+
+#logo {
+	padding-top: 50px;
+	padding-left: 100px;
+}
+
+nav {
+	float: right;
+	padding-top: 50px;
+	padding-right: 100px;
+	background-color: transparent;
+}
+
+nav>ul>li {
+	display: inline-block;
+	font-size: 12px;
+
+}

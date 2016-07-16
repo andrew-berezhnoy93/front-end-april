@@ -1,0 +1,117 @@
+/* Header */
+
+.header {
+	max-width: 1500px;
+	height: $headerHeight;
+	background-color: $headerBgColor;
+	margin: $headerMargin;
+	position: relative;
+}
+.header .logo {
+	/*box-sizing: border-box;*/
+	/*float: left;*/
+	width: 69px;
+	height: 14px;
+	left: 13%;
+	position: absolute;
+	top: 41%;
+}
+.header-navigation {
+	/*float: left;*/
+}
+.header-navigation ul {
+	position: absolute;
+	width: 470px;
+	right: 20%;
+	top: 41%;
+}
+.header-navigation ul li {
+	display: inline-block;
+	padding: 0 5.1%;
+}
+.header .login a, .header-navigation a {
+	text-decoration: none;
+	font-size: 1em;
+	font-family: arial;
+	text-transform: capitalize;
+	color: #fff;
+}
+.header .login {
+	float: right;
+	box-sizing: border-box;
+	height: 36px;
+	width: 100px;
+	border: 2px solid white;
+	padding: 8px 28px;
+	margin: 30px 13%;
+}
+
+
+
+
+
+@media screen and (max-width: 1500px) {
+	.header {
+	height: $headerHeight;
+	}
+	.header .logo {
+
+	}
+}
+
+@media screen and (max-width: 1150px) {
+	.header {
+	height: $headerHeight / 10 * 9;
+	}
+	.header .logo {
+	width: 66px;
+	left: 75px;
+	}
+	.header-navigation ul {
+	right: 215px;
+	}
+	.header .login {
+	margin: 25px 122px;
+	}
+
+}
+
+@media screen and (max-width: 800px) {
+	.header {
+	height: $headerHeight / 10 * 8;
+	}
+	.header .logo {
+	width: 59px;
+	left: 30px;
+	}
+	.header-navigation ul {
+	right: 160px;
+	}
+	.header .login {
+	margin: 22px 75px;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.header {
+	height: $headerHeight;
+	}
+	.header .logo {
+	width: 71px;
+	left: 40px;
+	}
+	.header .login, .header-navigation {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.header {
+	height: $headerHeight / 10 * 12;
+	}
+	.header .logo {
+	width: 87px;
+	height: 19px;
+	left: 47px;
+	}
+}

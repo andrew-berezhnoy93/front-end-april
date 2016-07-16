@@ -1,0 +1,138 @@
+//main: style.scss
+
+.burgerMenu {
+  width: 100%;
+  top: 25px;
+  position: fixed;
+  z-index: 99999;
+  display: none;
+  @include respond-to(320) {
+    display: block;
+  }
+  @include respond-to(480) {
+    display: block;
+  }
+
+  ul {
+    position: relative;
+    float: left;
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    a {
+      background: $darkGreen;
+      color: white;
+      position: relative;
+      float: left;
+      width: 100%;
+      height: 0;
+      line-height: 25px;
+      padding: 0 15px;
+      overflow: hidden;
+      text-align: left;
+      cursor: pointer;
+
+      &:not(.fa) {
+        font: 1.188em "Glasgow-Medium";
+        text-decoration: none;
+
+        &:hover {
+          background-color: $lightGreen;
+        }
+      }
+
+      &.fa {
+        width: calc(100%/3);
+        &:nth-of-type(1) {
+          text-align: right;
+        }
+        &:nth-of-type(2) {
+          text-align: center;
+        }
+        &:nth-of-type(3) {
+          text-align: left;
+        }
+      }
+    }
+  }
+}
+
+.burger-check {
+  display: none;
+}
+
+.burger {
+  float: left;
+  margin-left: 10px;
+  height: 60px;
+  cursor: pointer;
+
+  &:after {
+    @extend %contentAbsolute;
+    bottom: 7px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 13px;
+  }
+
+  span {
+    position: absolute;
+    top: 15px;
+    width: 20px;
+    height: 3px;
+    background: $darkGreen;
+    border-radius: 0.2em;
+
+    &:after,
+    &:before {
+      @extend %contentAbsolute;
+      left: 0;
+      top: 20px;
+      width: 20px;
+      height: 3px;
+      background: $darkGreen;
+      border-radius: 0.2em;
+    }
+
+    &:after {
+      top: 6px;
+    }
+
+    &:before {
+      top: -6px;
+    }
+  }
+}
+
+.burger span:after .burger-check:checked + .burger:after {
+  content: '';
+}
+
+.burger-check:checked + .burger span {
+  height: 0;
+  width: 0;
+}
+
+.burger-check:checked + .burger span:after,
+.burger-check:checked + .burger span:before {
+  top: 6px;
+}
+
+.burger-check:checked + .burger span:before {
+  -webkit-transform: rotate(225deg);
+  -ms-transform: rotate(225deg);
+  transform: rotate(225deg);
+}
+
+.burger-check:checked + .burger span:after {
+  -webkit-transform: rotate(-225deg);
+  -ms-transform: rotate(225deg);
+  transform: rotate(-225deg);
+}
+
+#main-nav:checked ~ ul a {
+  height: 30px;
+}

@@ -1,0 +1,7 @@
+.sidebar {
+	display: inline;
+	float:right;
+	width: $sidebarWidth / $containerWidth * 100%;
+	background-color: $sidebarBgColor;
+	height: 300px;
+}

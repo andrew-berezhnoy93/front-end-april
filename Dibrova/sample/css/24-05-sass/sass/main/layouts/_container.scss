@@ -1,0 +1,18 @@
+<<<<<<< HEAD:Dibrova/sample/css/24-05-sass/sass/main/layouts/_container.scss
+.container {
+	@extend .clearfix;
+
+	max-width: $containerWidth;
+	padding: 0 $containerPadding;
+	margin: 0 auto;
+}
+=======
+.container {
+	@extend .clearfix;
+
+	padding: 0 $containerPadding;
+	max-width: $containerWidth;	
+	margin: 0 auto;
+
+}
+>>>>>>> ecccc9d26dd68c71e9acf16b25d17ebff0b703cd:zhukovskaya/responsive/sass/main/layouts/_container.scss

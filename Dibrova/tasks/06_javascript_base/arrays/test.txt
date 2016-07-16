@@ -1,0 +1,12 @@
+файл package.json и папку tests скопировать из tasks -> 06_javascript_base -> arrays
+ в свою папку, где будешь работать с тестами.
+запустить "Node.js command prompt" .
+в нем как и в git bash при помощи команды "cd " открыть папку, в которой лежит скопированный package.json 
+после пропиши npm install 
+( должна создаться папка node_modules )
+дальше создай папку "06_js_basic" в нее скинь свой файл arrays.js 
+в файле arrays.js раскомментируй последнюю строку //module.exports = ArraysTasks; 
+после этого в Node.js command prompt впиши npm test
+[01.06.2016 14:11:12] Aleksandr Raienko: вроде так
+
+cd\Sergey\divas\Dibrova\01_html_base\js-tasks\arrays\06_js_basic

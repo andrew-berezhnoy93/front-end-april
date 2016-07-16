@@ -1,0 +1,332 @@
+* {
+  position: relative;
+  margin: 0 auto;
+  box-sizing: border-box; }
+
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  html {
+    font-size: 75%; } }
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  html {
+    font-size: 80%; } }
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  html {
+    font-size: 87.5%; } }
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  html {
+    font-size: 95%; } }
+
+@media only screen and (min-width: 1200px) and (max-width: 4800px) {
+  html {
+    font-size: 100%; } }
+
+h1 {
+  font: 1.250em "Bitter";
+  color: #ffffff; }
+  @media only screen and (min-width: 992px) and (max-width: 4799px) {
+    h1 {
+      margin-bottom: 2.000em; } }
+
+h2 {
+  padding: 0 0.500em 0.500em;
+  font: 2.250em "P22 Corinthia";
+  text-align: center;
+  color: #ffffff; }
+  @media only screen and (min-width: 992px) and (max-width: 4799px) {
+    h2 {
+      font: 6.250em "P22 Corinthia"; } }
+  @media only screen and (min-width: 1200px) and (max-width: 4800px) {
+    h2 {
+      margin-top: 1.800em; } }
+
+h4 {
+  margin: 1.500em auto auto;
+  padding: 1.500em 0;
+  border-top: 1px solid #82abd4;
+  font: 0.875em "Lato";
+  text-align: center;
+  letter-spacing: 0.060em;
+  color: #ffffff; }
+  @media only screen and (min-width: 768px) and (max-width: 4799px) {
+    h4 {
+      padding: 2.600em 0; } }
+  @media only screen and (min-width: 1200px) and (max-width: 4800px) {
+    h4 {
+      margin: 3.600em auto 5.000em; } }
+
+h5 {
+  padding: 1.500em 0 0.700em;
+  font: 700 1.000em "Lato";
+  letter-spacing: 0.050em;
+  text-align: left;
+  color: #676565; }
+
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer; }
+
+figure {
+  margin: auto; }
+
+ul {
+  padding: 0;
+  list-style: none; }
+
+li:not(.footermenu__list):not(.aboutus) {
+  display: inline-block; }
+
+img {
+  max-width: 100%; }
+
+.wrapper {
+  width: 100%; }
+  @media only screen and (min-width: 992px) and (max-width: 4800px) {
+    .wrapper {
+      width: 95%; } }
+
+#back-to-top {
+  position: fixed;
+  bottom: 0.300em;
+  right: 0.300em;
+  width: 1.000em;
+  height: 1.000em;
+  z-index: 9999;
+  vertical-align: middle;
+  border: 0;
+  border-radius: 0.500em;
+  background: #4d97e1;
+  transition: opacity 0.2s ease-out;
+  font-size: 3.000em;
+  text-align: center;
+  color: white;
+  opacity: 0; }
+
+#back-to-top:hover {
+  background: #488dd3; }
+
+#back-to-top.show {
+  opacity: 1; }
+
+#header {
+  padding: 0.500em 2.500em 0;
+  background-color: #dadada; }
+  @media only screen and (min-width: 992px) and (max-width: 4800px) {
+    #header {
+      padding: 6.250em 12.500em 23.125em;
+      background: url("../img/hero_small.png") bottom no-repeat #dadada; } }
+
+.headertop {
+  width: 100%;
+  padding: 0.500em; }
+  @media only screen and (min-width: 992px) and (max-width: 4800px) {
+    .headertop {
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: rgba(180, 185, 191, 0.65); } }
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .headertop {
+      padding: 1.414em 4.500em 0; } }
+  @media only screen and (min-width: 1200px) and (max-width: 4800px) {
+    .headertop {
+      padding: 1.414em 12.500em 0; } }
+  @media only screen and (min-width: 992px) and (max-width: 4800px) {
+    .headertop__left {
+      float: left; } }
+  @media only screen and (min-width: 992px) and (max-width: 4800px) {
+    .headertop__right {
+      float: right; } }
+
+.fa-bed:before,
+.fa-fax:before,
+.fa-info:before,
+.fa-shopping-basket:before,
+.fa-shopping-cart:before,
+.fa-sign-in:before {
+  margin-right: 0.6em; }
+
+.navigation {
+  width: 6.250em;
+  vertical-align: middle;
+  text-align: center;
+  line-height: 2.500em;
+  color: #ffffff; }
+  .navigation:hover {
+    outline: #ffffff solid 2px;
+    transition: 0.5s;
+    -moz-outline-radius: 2px; }
+  .navigation span {
+    font: 1.000em "Lato"; }
+
+h2 + ul {
+  position: absolute;
+  display: none;
+  width: 260px;
+  top: 100px;
+  left: 50%;
+  margin-left: -130px; }
+  @media only screen and (min-width: 992px) and (max-width: 1254px) {
+    h2 + ul {
+      display: block;
+      top: 200px; } }
+  @media only screen and (min-width: 1255px) and (max-width: 4800px) {
+    h2 + ul {
+      display: block;
+      top: 100px; } }
+
+.underh2__anchor {
+  padding: 0 0.800em;
+  font: 0.875em "Lato";
+  color: #ffffff; }
+  .underh2__anchor:not(.underh2__anchor--last)::after {
+    content: " - ";
+    position: absolute;
+    padding: 0 0.600em; }
+
+.mainmenu {
+  height: 3.000em;
+  padding: 0.500em;
+  background-color: #bfd9f2;
+  letter-spacing: 0.100em; }
+  @media only screen and (min-width: 768px) and (max-width: 1199px) {
+    .mainmenu {
+      padding: 0.500em 2.500em; } }
+  @media only screen and (min-width: 1200px) and (max-width: 4800px) {
+    .mainmenu {
+      padding: 2.200em 12.500em 4.000em; } }
+  .mainmenu__question {
+    float: left;
+    margin-top: 0.2em;
+    font: 1.250em "Lato";
+    text-transform: uppercase;
+    color: #95badf; }
+  .mainmenu .fa-cog {
+    float: right;
+    color: #a1c4e6; }
+
+.maincontainer {
+  text-align: center; }
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .maincontainer {
+      padding: 3.300em 1.500em 0; } }
+  @media only screen and (min-width: 1200px) and (max-width: 4800px) {
+    .maincontainer {
+      padding-top: 6.300em;
+      padding-left: 12.500em;
+      padding-right: calc(12.500em - 40px); } }
+  @media only screen and (min-width: 1200px) and (max-width: 1599px) {
+    .maincontainer {
+      padding-left: 1.500em;
+      padding-right: calc(1.500em - 40px); } }
+
+.figure {
+  display: inline-block;
+  width: 46%;
+  margin: 0.500em; }
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .figure {
+      width: 30%; } }
+  @media only screen and (min-width: 1200px) and (max-width: 4800px) {
+    .figure {
+      width: 340px;
+      margin: auto 40px 2.500em auto; } }
+  @media only screen and (min-width: 1200px) and (max-width: 4800px) {
+    .figure__top {
+      height: 230px;
+      overflow: hidden; } }
+  .figure__top__price {
+    position: absolute;
+    top: 0.500em;
+    left: 0.700em;
+    padding: 0.850em 1.300em;
+    z-index: 100;
+    font: 700 1.000em "Lato";
+    border-radius: 4px;
+    background-color: #ffffff;
+    color: #524f4f; }
+  .figure__link {
+    font: 0.750em "Lato";
+    letter-spacing: 0.030em;
+    color: #9d9d9d; }
+    .figure__link + * {
+      font: 0.750em "Lato";
+      letter-spacing: 0.030em;
+      text-align: left;
+      color: #676767; }
+
+figcaption {
+  margin-top: -4px;
+  padding: 0 1.250em 1.600em;
+  border: 2px solid #f2f1f1;
+  text-align: left; }
+  @media only screen and (min-width: 1200px) and (max-width: 4800px) {
+    figcaption {
+      margin-top: auto; } }
+
+input[type=button] {
+  left: calc(50% - 15em/2);
+  width: 15.000em;
+  height: 3.000em;
+  margin: 0.500em auto 1.000em;
+  outline: none;
+  border: 2px solid #afcce7;
+  background-color: transparent;
+  border-radius: 30px;
+  font: 1.000em "Lato";
+  text-transform: uppercase;
+  color: #afcce7; }
+  @media only screen and (min-width: 1200px) and (max-width: 4800px) {
+    input[type=button] {
+      left: calc(50% - 264px/2);
+      width: 16.500em;
+      height: 3.750em;
+      margin: 3.800em auto 6.200em; } }
+
+#footer {
+  padding: 0.500em;
+  background-color: #95badf; }
+  @media only screen and (min-width: 768px) and (max-width: 1199px) {
+    #footer {
+      padding: 2.500em; } }
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    #footer {
+      margin-bottom: 2.000em; } }
+  @media only screen and (min-width: 1200px) and (max-width: 4800px) {
+    #footer {
+      padding: 6.000em 12.500em 0; } }
+
+.footermenu {
+  display: inline-block;
+  width: calc(100%/3); }
+  @media only screen and (min-width: 768px) and (max-width: 4800px) {
+    .footermenu {
+      width: calc(70%/3); } }
+  .footermenu__list, .aboutus {
+    padding-bottom: 1.100em;
+    font: 1.000em "Lato";
+    color: #ffffff; }
+
+.aboutussocial {
+  vertical-align: top;
+  text-align: center; }
+  @media only screen and (min-width: 768px) and (max-width: 4800px) {
+    .aboutussocial {
+      width: 30%;
+      display: inline-block;
+      text-align: left; } }
+  .aboutussocial .fa-facebook, .aboutussocial .fa-git, .aboutussocial .fa-skype, .aboutussocial .fa-twitter {
+    margin-right: 1.200em;
+    font-size: 1.100em;
+    color: #ffffff; }
+
+.aboutus {
+  padding-bottom: 1.500em;
+  line-height: 2.000em;
+  text-align: justify; }
+
+h4 a {
+  font-weight: 700; }

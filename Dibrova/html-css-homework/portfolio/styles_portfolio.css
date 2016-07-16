@@ -1,0 +1,265 @@
+body {
+	margin: 0;
+	background: #f9f6ea;
+	color: #8d8d8d;
+	font: 11px/1.2 Arial, Helvetica, sans-serif;
+	min-width: 980px;
+}
+a {
+	text-decoration: none;
+	color: #656565;
+}
+a:hover {
+	text-decoration: underline;
+}
+h2, h3 {
+	margin: 0;
+}
+header, footer, article, section, nav, main {
+	display: block;
+}
+#header {
+	background: #174245 url(../img/head-bg.jpg);
+	padding: 53px 0 50px;
+}
+.container {
+	width: 980px;
+	margin: 0 auto;
+}
+footer {
+	width: 980px;
+	margin: 0 auto;
+}
+#wrapper {
+	margin-bottom: 100px;
+}
+.container:after, #main:after, #footer:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+.logo {
+	float: left;
+}
+.logo a {
+	font-size: 40px;
+	width: 227px;
+	height: 29px;
+	display: block;
+	background: url(/Сергей/divas/Dibrova/01_html_base/portfolio/logo.png) no-repeat;
+	text-indent: -9999px;
+	overflow: hidden;
+}
+.navigation {
+	float: right;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.navigation ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: inline-block;
+}
+.navigation ul li {
+	display: inline-block;
+	vertical-align: top;
+}
+.navigation ul li+li {
+	margin: 0 0 0 23px;
+}
+.navigation ul a {
+	display: block;
+	color: #fff;
+}
+.navigation ul .active a,
+.navigation ul a:hover {
+	color: #ffc600;
+	text-decoration: underline;
+}
+#main {
+	background: #fff;
+	width: 948px;
+	margin: -16px auto 0;
+	border: 1px solid #eeeedc;
+	padding: 22px 15px 16px;
+}
+#content {
+	float: left;
+	width: 637px;
+}
+.title {
+	font-size: 20px;
+	line-height: 22px;
+	color: #000;
+	letter-spacing: -1px;
+	margin: 0 0 23px;
+}
+.project-titles {
+	background: #fdfbf1;
+	border: 1px solid #eeeedc;
+	padding: 7px;
+}
+.project-titles2 {
+	background: #fff;
+	border: 1px solid #eeeedc;
+	padding: 8px 9px 11px 21px;
+}
+.project {
+	padding: 0 0 7px;
+	margin: 0 0 31px;
+	overflow: hidden;
+	border-bottom: 1px solid #aeaeae;
+}
+.project h2 {
+	text-transform: capitalize;
+	font-size: 36px;
+	line-height: 38px;
+	margin: 0 0 20px;
+	color: #656565;
+	padding: 0 0 20px;
+	border-bottom: 1px solid #aeaeae;
+}
+.project .project-content {
+	max-width: 285px;
+	float: left;
+	font-size: 11px;
+	line-height: 20px; /*межстрочный интервал*/
+	padding-right: 11px;
+}
+.project p {
+	margin: 0;
+}
+.image {
+	vertical-align: top;
+	padding: 6px;
+	margin: 0 0 5px;
+	border: 1px solid #eeeedc;
+}
+.project-img {
+	float: right;
+	width: 279px;
+}
+.project .project-img .more {
+	display: inline-block;
+	vertical-align: block;
+	background: #fdfbf1;
+	border: 1px solid #dbd6c6;
+	font-size: 14px;
+	font-weight: bold;
+	color: #656565;
+	text-decoration: none;
+	text-transform: capitalize;
+	padding: 6px 18px 6px;
+}
+.project .project-img .more:hover {
+	background: #f0ede0;
+}
+.pagination {
+	margin: -20px 0 0;
+}
+.pagination ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-size: 0;
+	line-height: 0;
+	letter-spacing: -4px;
+	color: #656565;
+}
+.pagination ul li {
+	font-size: 14px;
+	line-height: 16px;
+	letter-spacing: normal;
+	font-weight: bold;
+	display: inline-block;
+	vertical-align: top;
+}
+.pagination ul li+li {
+	margin: 0 0 0 9px;
+}
+.pagination ul a,
+.pagination ul li span {
+	display: block;
+	line-height: 31px;
+	border: 1px solid #dbd6c6;
+	background: #fdfbf1;
+	text-decoration: none;
+	color: #656565;
+	padding: 0 11px;
+}
+.pagination ul .active a,
+.pagination ul a:hover {
+	background: #f0ede0;
+}
+.sidebar {
+	float: right;
+	width: 303px;
+}
+.saying {
+	background: #fdfbf1;
+	border: 1px solid #eeeedc;
+	padding: 7px;
+}
+.saying2 {
+	background: #fff;
+	border: 1px solid #eeeedc;
+	padding: 8px 9px 40px 21px;
+}
+.comment {
+	line-height: 20px;
+	padding: 18px 0 0;
+	display: block;
+	/*background: url(../img/quote.png) no-repeat 0 17px;*/
+}
+.comment2 {
+	border-top: 1px solid #eaeaea;
+	padding-top: 20px;
+	}
+.comment q {
+	margin: 0 0 14px;
+	display: block;
+}
+.comment cite {
+	display: block;
+	text-align: right;
+	text-transform: uppercase;
+	color: #656565;
+	line-height: 13px;
+	font-weight: bold;
+	font-style: normal;
+}
+.adv1 {
+	background: #fdfbf1;
+	border: 1px solid #eeeedc;
+	padding: 7px;
+}
+.adv2 {
+	background: #f0ede0;;
+	border: 1px solid #eeeedc;
+	padding: 8px 9px 11px 21px;
+}
+.advertising .adv2 .more2 {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    color: #656565;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 8px 60px 8px;
+}
+.footer-logo {
+	float: left;
+}
+.logo-footer a {
+	font-size: 40px;
+	width: 227px;
+	height: 29px;
+	display: block;
+	background: url(/Сергей/divas/Dibrova/01_html_base/portfolio/logo-footer.png) no-repeat;
+	text-indent: -9999px;
+	overflow: hidden;
+}
+.copyright {
+	margin-left: 600px;
+}

@@ -1,0 +1,59 @@
+html,body {
+	padding: 0;
+	margin: 0;
+	min-width: 320px;
+}
+header,footer,aside,content,main {
+	display: block;
+}
+.clearfix:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+.container {
+	margin: 0 auto;
+	max-width: 1200px;
+	padding: 0;
+}
+header {
+	background: #000;
+	opacity: 0.5;
+	height: 50px;
+}
+main {
+	float:left;
+	background: lime;
+	width: 60%;
+	height: 500px;
+}
+aside {
+	float:right;
+	background: #555;
+	width: 35%;
+	height: 500px;
+}
+footer {
+	background: green;
+	opacity: 0.5;
+	height: 50px;
+}
+@media screen and (max-width: 1300px){
+	.container{
+		max-width: 900px;
+	}
+	main {
+		float: right;
+	}
+	aside {
+		float: left;
+	}
+}
+@media screen and (max-width: 800px){
+	main {
+		width: 100%;
+	}
+	aside {
+		display: none;
+	}
+}

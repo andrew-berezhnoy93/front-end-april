@@ -1,0 +1,8 @@
+/* main */
+.main {
+	display: inline;
+	width: $mainWidth / $containerWidth * 100%;
+	float: left;
+	background: $generalBgColor;
+	height: 999px;
+}

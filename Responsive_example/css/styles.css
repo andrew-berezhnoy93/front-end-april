@@ -1,0 +1,135 @@
+/* Reset styles */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.clearfix:after, .container:after {
+  content: '';
+  display: block;
+  clear: both; }
+
+*:before,
+*:after {
+  content: '';
+  display: table; }
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box; }
+
+/* Styles for our responsive site */
+/* Container */
+.container {
+  max-width: 1000px;
+  padding: 0 15px;
+  margin: 0 auto; }
+
+/* Layouts */
+/* Header */
+.header {
+  height: 100px;
+  background-color: #efe;
+  margin: 0 0 20px; }
+  @media screen and (max-width: 1000px) {
+    .header {
+      height: 50px; } }
+
+/* Main content */
+.main {
+  overflow: hidden;
+  height: 500px;
+  background-color: #eee;
+  margin-bottom: 20px;
+  padding: 15px;
+  direction: rtl;
+  text-align: center;
+  vertical-align: middle; }
+
+/* Sidebar */
+.sidebar {
+  float: right;
+  width: 250px;
+  margin-left: 50px;
+  background-color: #eee;
+  height: 500px;
+  margin-bottom: 20px;
+  padding: 15px; }
+  .main + .sidebar {
+    display: none; }
+  @media screen and (max-width: 1000px) {
+    .sidebar {
+      display: none; }
+      .main + .sidebar {
+        display: block;
+        float: none;
+        width: auto;
+        margin-left: 0;
+        height: 50px; } }
+
+/* Footer */
+.footer {
+  background-color: #eef;
+  height: 100px; }
+
+/* Blocks */
+/* Flex elements example (align center) */
+.el-holder {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  height: 100%; }
+  .el-holder .element {
+    padding: 20px;
+    font-size: 26px;
+    line-height: 30px;
+    background-color: #fee;
+    margin: 0 10px; }
+
+/*# sourceMappingURL=styles.css.map */

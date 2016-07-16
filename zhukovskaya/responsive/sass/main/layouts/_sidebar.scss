@@ -1,0 +1,21 @@
+/* Sidebar*/
+
+.sidebar {
+	float: right;
+	width: $sidebarWidth;
+	margin-left: $sidebarMargin;
+	background-color: $generalBgColor;
+	height: 500px;
+
+	@media screen and (min-width: 100px) {
+	float: none;
+	width: auto;
+	margin: 0 0 $sidebarMargin;
+
+
+}
+
+
+
+
+}

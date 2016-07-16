@@ -1,0 +1,11 @@
+/* Header */
+
+.header {
+	height: $headerHeight;
+	background-color: $headerBgColor;
+	margin: $headerMargin;
+
+	@media screen and (max-width: $tabletDeviceWidth) {
+		height: $headerHeight / 2;
+	}
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Questions.</title>
+	<style>
+		label,
+		input,
+		select {
+			display: block;
+			width: 100%;
+			box-sizing: border-box;
+			font-size: 20px;
+			line-height: 26px;
+		}
+
+		.form-holder {
+			padding: 30px;
+			font-size: 20px;
+			line-height: 26px;
+			position: fixed;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			border: 1px solid black;
+			background: #fefefe;
+		}
+
+		.row {
+			margin-bottom: 15px;
+		}
+	</style>
+</head>
+<body>
+	<div class="form-holder">
+		<form id="quest-form" action="http://localhost:4730/answers" method="POST" >
+			<div class="row">
+				<label>
+					<span>What is your name?</span>
+					<input type="text" name="name" >
+				</label>
+			</div>
+
+			<div class="row">
+				<label>
+					<span>Are you working?</span>
+					<select name="working" required>
+						<option value="">-No Data-</option>
+						<option value="yes">Yes</option>
+						<option value="no">No</option>
+					</select>			
+				</label>
+			</div>
+
+			<div class="row">
+				<label>
+					<span>Will you be on occupation on Saturday?</span>
+					<select name="occupation">
+						<option value="">-No Data-</option>
+						<option value="yes">Yes</option>
+						<option value="no">No</option>
+						<option value="may be">May be</option>
+					</select>
+				</label>
+			</div>
+
+			<div class="row">
+				<input type="submit" value="Submit">
+			</div>
+		</form>
+	</div>
+
+
+	<script>
+		var $questForm = document.getElementById('quest-form');
+
+		$questForm.onsubmit = function(event) {
+			event.preventDefault();
+			var
+			 request = {},
+			 elements = $questForm.elements;
+
+			for (var i = 0; i < elements.length; i++) {
+				if (elements[i].attributes.name) {
+					request[elements[i].attributes.name.value] = elements[i].value;
+				}
+			}
+
+			request = JSON.stringify(request);
+
+			var req = new XMLHttpRequest();
+
+			req.open($questForm.attributes.method.value, $questForm.attributes.action.value, true);
+			req.setRequestHeader('Content-Type', 'application/json');
+
+			req.onreadystatechange = function() {
+				if (req.readyState == req.DONE && req.status == 200) {
+					var answers = JSON.parse(req.response)
+					console.table(answers);
+					var works = answers.filter(function(item) {
+						return item.working == 'yes';
+					});
+
+					console.log('Work %s% people of %i', (works.length / answers.length * 100).toFixed(2), answers.length);
+
+					var occupation = answers.filter(function(item) {
+						return item.occupation == 'yes';
+					});
+
+					console.log('%s% of people will be on occupation on Saturday from %i', (occupation.length / answers.length * 100).toFixed(2), answers.length);
+				}
+			}
+
+			req.send(request);
+		};
+	</script>
+</body>
+</html>

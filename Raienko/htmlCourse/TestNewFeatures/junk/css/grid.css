@@ -1,0 +1,70 @@
+/*  GRID  */
+*,
+*:after,
+*.before {
+	box-sizing: border-box;
+}
+.area {
+	margin: 0 auto;
+	background: gray;
+}
+.row:before,
+.row:after {
+	content: "";
+	display: table;
+}
+.row:after {
+	clear: both;
+}
+.col-xs-12, .col-xs-6, .col-sm-6, .col-sm-4, .col-sm-2, .col-lg-2, .col-lg-6, .col-lg-4{
+	float: left;
+	position: relative;
+}
+.col-xs-12 {
+	width: 100%;
+}
+.col-xs-6 {
+	width: 50%;
+}
+.greenBG {
+	background: green;
+}
+.blueBG {
+	background: blue;
+}
+.redBG {
+	background: red;
+}
+@media (min-width: 768px) {
+	.area {
+		width: 750px;
+	}
+	.col-sm-6 {
+		width: 50%;
+	}
+	.col-sm-4{
+		width: 33.3333%;
+	}
+	.col-sm-2 {
+		width: 16.6666%
+	}
+}
+@media (min-width: 992px) {
+	.area {
+		width: 970px;
+	}
+}
+@media (min-width: 1200px) {
+	.area {
+		width: 1170px;
+	}
+	.col-lg-3 {
+		width: 25%;
+	}
+	.col-lg-4 {
+		width: 33.333%;
+	}
+	.col-lg-5 {
+		width: 41.6666%;
+	}
+}

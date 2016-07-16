@@ -1,0 +1,20 @@
+html,body {
+	padding: 0;
+	margin: 0;
+}
+
+@mixin border-radius {
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	-o-border-radius: $radius;
+	border-radius: $radius;}
+
+$color: #555;
+header, footer {
+	display: block;
+}
+a {
+ 	color: $color;
+ }
+
+/*.btn {	@include border-radius (4px);}*/

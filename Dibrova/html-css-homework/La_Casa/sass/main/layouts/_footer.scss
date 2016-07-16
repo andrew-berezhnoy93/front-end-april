@@ -1,0 +1,81 @@
+/* Footer */
+.footer {
+	max-width: 1500px;
+	/*height: 420px;*/
+	background-color: #95badf;
+	margin: 0;
+	padding: 85px 13.5% 33px;
+
+}
+.footer .flex-container {
+	justify-content: space-between;
+	border-bottom: 1px solid #82abd4;
+	padding-bottom: 50px; 
+}
+.footer .flex-container a,
+.footer .flex-container p {
+	font-family: 'Lato-Regular', arial;
+	font-size: 1.0em;
+	letter-spacing: 0.04em;
+	line-height: 2.4;
+	text-decoration: none;
+	color: white;
+}
+.footer .flex-container .section1, 
+.footer .flex-container .section2, 
+.footer .flex-container .section3, 
+.footer .flex-container .section4 {
+	flex-basis: 24%;
+	flex-grow: 1;
+}
+
+.footer .flex-container .section2 {
+	margin-left: -20px;
+}
+.footer .flex-container .section3 {
+	margin-left: -20px;
+}
+.footer .flex-container .section4 {
+	flex-grow: 4;
+	margin-left: -30px;
+}
+.footer .flex-container .section4 p {
+	line-height: 2.2;
+}
+.footer .flex-container .section4 img {
+	padding-top: 25px;
+}
+.footer .copyright {
+	white-space: nowrap;
+	font-family: 'Lato-Bold', arial;
+	font-size: 1.0em;
+	color: white;
+	text-align: center;
+	padding-top: 33px;
+}
+
+
+
+
+@media screen and (max-width: 1150px) {
+	.footer {
+	padding: 85px 5% 33px;
+	}
+}
+@media screen and (max-width: 700px) {
+	.footer .flex-container .section1, 
+	.footer .flex-container .section2, 
+	.footer .flex-container .section3, {
+	flex-basis: 33%;
+	margin-left: 0px;
+	}
+	.footer .flex-container .section4 {
+	margin-left: 0px;
+	}
+	.footer .flex-container .section4 p {
+		padding-top: 80px;
+	}
+	.footer .flex-container .section4 img {
+		margin-left: 35%;
+	}
+}

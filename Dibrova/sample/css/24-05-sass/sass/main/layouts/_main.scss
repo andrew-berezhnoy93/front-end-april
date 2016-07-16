@@ -1,0 +1,12 @@
+/* Main content */
+
+.main {
+	overflow: hidden;
+	height: 500px;
+	background-color: $generalBgColor;
+	margin-bottom: 20px;
+	padding: $mainPadding;
+	direction: rtl;
+	text-align: center;
+	vertical-align: middle;
+}
