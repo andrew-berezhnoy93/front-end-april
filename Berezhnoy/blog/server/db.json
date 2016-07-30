@@ -1,0 +1,130 @@
+{
+  "articles": [
+    {
+      "id": 0,
+      "title": "One day of my life.",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, quidem vel tempore harum non laboriosam, ex possimus voluptatibus quae exercitationem illum dolores eos doloremque soluta aut! Consequatur minima, totam maxime.",
+      "author": "By Me!",
+      "photo": "https://randomuser.me/api/portraits/men/15.jpg",
+      "likes": 95,
+      "comments": [
+        {
+          "id": 1,
+          "author": "Some one",
+          "authorPoto": "https://randomuser.me/api/portraits/men/15.jpg",
+          "comment": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic tempore consequatur!",
+          "like": 2,
+          "createdAt": "Mon Jul 11 2016 20:43:20 GMT+0300 (EEST)"
+        }
+      ],
+      "createdAt": "Mon Jul 11 2016 20:43:20 GMT+0300 (EEST)",
+      "editedAt": "Mon Jul 11 2016 20:44:12 GMT+0300 (EEST)"
+    },
+    {
+      "id": 1,
+      "title": "Another day of my life.",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.  Accusamus, quidem vel tempore harum non laboriosam, ex possimus voluptatibus quae exercitationem illum dolores eos doloremque soluta aut! Consequatur minima, totam maxime.",
+      "author": "By Me!",
+      "photo": "https://randomuser.me/api/portraits/men/15.jpg",
+      "likes": 34,
+      "comments": [
+        {
+          "id": 1,
+          "author": "Some one",
+          "authorPoto": "https://randomuser.me/api/portraits/men/15.jpg",
+          "comment": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic tempore consequatur!",
+          "like": 2,
+          "createdAt": "Mon Jul 11 2016 20:43:20 GMT+0300 (EEST)"
+        }
+      ],
+      "createdAt": "Mon Jul 11 2016 20:43:20 GMT+0300 (EEST)",
+      "editedAt": "Mon Jul 11 2016 20:44:12 GMT+0300 (EEST)"
+    },
+    {
+      "id": 2,
+      "title": "Third one of my life.",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.  Accusamus,quidem vel tempore harum non laboriosam,ex possimus voluptatibusquae exercitationem illum dolores eos doloremque soluta aut!Consequatur minima,totam maxime.",
+      "author": "By Me!",
+      "photo": "https://randomuser.me/api/portraits/men/15.jpg",
+      "likes": 10,
+      "comments": [
+        {
+          "id": 1,
+          "author": "Some one",
+          "authorPoto": "https://randomuser.me/api/portraits/men/15.jpg",
+          "comment": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic tempore consequatur!",
+          "like": 2,
+          "createdAt": "Mon Jul 11 2016 20:43:20 GMT+0300 (EEST)"
+        }
+      ],
+      "createdAt": "Mon Jul 11 2016 20:43:20 GMT+0300 (EEST)",
+      "editedAt": "Mon Jul 11 2016 20:44:12 GMT+0300 (EEST)"
+    },
+    {
+      "title": "sadsda",
+      "text": "sadasdas",
+      "author": "sadsdasd",
+      "photo": "sdasdas",
+      "createdAt": "2016-07-16T09:10:37.403Z",
+      "editedAt": "2016-07-16T09:10:37.403Z",
+      "comments": [],
+      "likes": 7,
+      "id": 3
+    },
+    {
+      "title": "dsdfsdf",
+      "text": "dsfdsfdf",
+      "author": "dfsdfsdfs",
+      "photo": "dsdfsdfsdf",
+      "createdAt": "2016-07-16T09:12:16.327Z",
+      "editedAt": "2016-07-16T09:12:16.327Z",
+      "comments": [],
+      "likes": 0,
+      "id": 4
+    },
+    {
+      "title": "dsdfsdf",
+      "text": "dsfdsfdf",
+      "author": "dfsdfsdfs",
+      "photo": "dsdfsdfsdf",
+      "createdAt": "2016-07-16T09:15:38.831Z",
+      "editedAt": "2016-07-16T09:15:38.831Z",
+      "comments": [],
+      "likes": 0,
+      "id": 5
+    },
+    {
+      "title": "dsdfsdf",
+      "text": "dsfdsfdf",
+      "author": "dfsdfsdfs",
+      "photo": "dsdfsdfsdf",
+      "createdAt": "2016-07-16T09:16:16.565Z",
+      "editedAt": "2016-07-16T09:16:16.565Z",
+      "comments": [],
+      "likes": 0,
+      "id": 6
+    },
+    {
+      "title": "dsdfsdf",
+      "text": "dsfdsfdf",
+      "author": "dfsdfsdfs",
+      "photo": "dsdfsdfsdf",
+      "createdAt": "2016-07-16T09:16:23.634Z",
+      "editedAt": "2016-07-16T09:16:23.634Z",
+      "comments": [],
+      "likes": 0,
+      "id": 7
+    },
+    {
+      "title": "sdasdasda",
+      "text": "dasdasdasd",
+      "author": "sdasdasda",
+      "photo": "sdasdasda",
+      "createdAt": "2016-07-16T09:17:01.283Z",
+      "editedAt": "2016-07-16T09:17:01.283Z",
+      "comments": [],
+      "likes": 0,
+      "id": 8
+    }
+  ]
+}

@@ -28,13 +28,15 @@
     // open connection
     var connection = new WebSocket('ws://192.168.1.74:1337');
 
+
+function addListeners(){
+
     connection.onopen = function () {
         // first we want users to enter their names
         var userData = localStorage.getItem('userData');
         userData = userData && JSON.parse(userData);
 
         input.removeAttr('disabled');
-
         if (userData) {
             myName = userData.name;
             connection.send(myName);
@@ -95,6 +97,8 @@
             console.log('Hmm..., I\'ve never seen JSON like this: ', json);
         }
     };
+}
+	addListeners();
 
     /**
      * Send mesage when user presses Enter key
@@ -144,6 +148,7 @@
     setInterval(function() {
         if (connection.readyState !== 1) {
             status.text('Error');
+            document.getElementById("button1").innerHTML = "Log In";
             input.attr('disabled', 'disabled').val('Unable to comminucate '
                                                  + 'with the WebSocket server.');
         }
@@ -168,5 +173,20 @@
              + (dt.getHours() < 10 ? '0' + dt.getHours() : dt.getHours()) + ':'
              + (dt.getMinutes() < 10 ? '0' + dt.getMinutes() : dt.getMinutes())
              + ': ' + message + '</p>');
+    }
+
+    document.getElementById("button1").onclick = function(event){
+    	if(connection.readyState == 1){
+    	myName = false;
+    	localStorage.setItem('userData', '');
+    	status.text("Log out");
+    	connection.close();
+    } else{
+    		connection = new WebSocket('ws://192.168.1.74:1337');
+    		addListeners();
+    		document.getElementById("button1").innerHTML = "Log Out";
+    		input.val("");
+    }
+    
     }
 })(jQuery);
